@@ -1,0 +1,902 @@
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="X-UA-Compatible" content="IE=Edge"><link rel="SHORTCUT ICON" href="/images/sl-TabIco.ico" type="image/x-icon"><link href="images/apple-touch-icon.png" rel="icon"><link rel="apple-touch-icon" href="images/apple-touch-icon-iphone-60x60.png"><link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-ipad-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-iphone-retina-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-ipad-retina-152x152.png">
+    
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="Infragestic/css/infragistics.theme.css" rel="stylesheet"><link href="Infragestic/css/infragistics.css" rel="stylesheet">
+
+    <!--CSS file specific for chart styling -->
+    <link href="Infragestic/css/infragistics.ui.chart.css" rel="stylesheet">
+
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/dx-map-lib/jquery-ui.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="Infragestic/js/modernizr-latest.js"></script>
+    <script src="Infragestic/js/infragistics.core.js"></script>
+    <script src="Infragestic/js/infragistics.lob.js"></script>
+    <script src="Infragestic/js/infragistics.dv.js"></script>
+    
+    <script src="Infragestic/js/infragistics.ui.shared.js"></script>
+    <script src="Infragestic/js/infragistics.ui.grid.filtering.js"></script>
+
+    <link href="css/StyleSheet-V01.css?ver=5345" rel="stylesheet">
+
+    
+    
+
+    
+
+    <script src="Scripts/dx-map-lib/globalize.min.js"></script>
+    <script src="Scripts/dx-map-lib/dx.all.js"></script>
+    <script src="Scripts/dx-map-lib/dx.chartjs.js"></script>
+    <script src="Scripts/dx-map-lib/usa.js"></script>
+    <script src="Scripts/dx-map-lib/modules.js"></script>
+
+    <script src="Scripts/jquery.showLoading.min.js"></script>
+    <script src="Scripts/modalpopup.js?ver=5345"></script>
+
+    <script src="Scripts/Modules/display-messages.js?ver=5345"></script>
+    <script src="Scripts/Modules/Module-V24.js?ver=5345"></script>
+
+    <script src="Scripts/Modules/ExportToExcel-V03.js?ver=5345"></script>
+
+    <script src="Scripts/masterpage.js?ver=5345"></script>
+
+    <script src="Scripts/logout-after-several-time.js?ver=5345"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#div-main-content").show();
+        });
+    </script>
+    
+    <link href="Scripts/dx-map-lib/css/dx.common.css" rel="stylesheet">
+    <link href="Scripts/dx-map-lib/css/dx.light.css" rel="stylesheet">
+    <script src="Scripts/dx-map-lib/dx.jszip.js"></script>
+    <script src="Scripts/Modules/branches-treeview-V11.js?ver=5345"></script>
+    <script src="Scripts/Modules/user-branches-view-permission-V05.js?ver=5345"></script>
+    <script src="Scripts/Boss-LockedLoans-V16.js?ver=5345"></script>
+    <script src="Scripts/accounting-V43.js?ver=5345"></script>
+    <script src="Scripts/Modules/level3Common.js?ver=5345"></script>
+    <script src="Scripts/accounting-production-compansation-V04.js?ver=5345"></script>
+    <script src="Scripts/Modules/ModalPopup-V20.js?ver=5345"></script>
+    <script src="Scripts/accounting-Level4Click-V08.js?ver=5345"></script>
+    <script src="Scripts/accounting-redirect-to-appraisal-V04.js?ver=5345"></script>
+    <script src="Scripts/accounting-breakeven-analysis-V02.js?ver=5345"></script>
+    <script src="Scripts/accounting-general-ledger-report-V03.js?ver=5345"></script>
+    <script src="Scripts/accounting-rebate-and-medical-V05.js?ver=5345"></script>
+    <script src="Scripts/accounting-Product-type-percentage-V02.js?ver=5345"></script>
+    <script src="Scripts/accounting-staffpayroll-and-bmpayroll-V04.js?ver=5345"></script>
+    <script src="Scripts/accounting-bm-lo-volume-V07.js?ver=5345"></script>
+    <script src="Scripts/Boss-lockedloans-popup-v08.js?ver=5345"></script>
+    <link href="css/toggle-btn-prensentation-V01.css?ver=5345" rel="stylesheet">
+    <link href="css/sl-blast.css?ver=5345" rel="stylesheet">
+
+    <style type="text/css">
+        .shadow {
+            -moz-box-shadow: 10px 10px 5px #888;
+            -webkit-box-shadow: 10px 10px 5px #888;
+            box-shadow: 10px 10px 5px #888;
+        }
+
+        .ProductTypeTh {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .center {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -300px;
+            margin-top: -250px;
+        }
+
+        #div-variance-dropdown .ui-igcombo-field {
+            color: #000;
+            font-family: 'Arial';
+        }
+    </style>
+     <script type="text/javascript">
+         $(function () {
+             $("[id$=hdnReOrderPriorYearColumnAllowedMonths]").val('1?2');            
+        });
+    </script>
+<title>SL-BLAST</title></head>
+<body>
+    <form method="post" action="./accounting.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="0VfwBkW5h54HohD8V9HZ3rqOA/deGgExiZcDnR/zxKMSjW05By+cthSUq9FzAuprd/NcmF5sq2UmvDKPpky59yhCaYDdG8NP3tUpVYJx2mbd62CNavvXi4B+lunrdYda/AhdNFUedwr09ng6dvlxWGVIXOkkRE+ea3O8/8QlAkMZv9/Soel7NCEsy9QJJF0DkCh2uOpAkykAhri02QUhqlu57qT49n+X/BO1+DLeiQ+M1/q88jFZEFCn/NzcAyfTXX+J8NlrIZKLNBPGwFaAZpTKB1zcVD5mqGBzZAGS+qf6aDrQeKTHrQpd0UqrwdLGqh/2n3hDQh9ys2PhFSV5hYCevyVynSsVhcUGVGlawHq04qR9QjZP82M8hGsaSTLI9upVMnXp7BGCDpej98UtkMXJF8F6GjsHdk0PwE/z4D03INZpuHaH8ZKx83JkA39ygcvn6vfpZWNgTWDSKS2+uy63wA/pi/3uy0XzYCRQMh9bRqZwxy6AaQC1XBowmgzC4xonz8qJvC2TrCFW3FpCEeD7pU99XTzjt0HgvCujAkMyGR4mPGOeZYuc5UPgenUxjh6s+CY3I5c7Sb8mX9hYwPCqubX1AgWmM18+6jHUuG3OLrGjEueEwtI0Np7VHLpekNIGGlAMNIwNmvtQdy58BoAcEy4m4/f/daHmnxj3FmRtJyEH">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZJhvoix5SPnub_jL7Kd0DnnKEsKl_eaOiC382cmouhw7Z-vryQ2&amp;t=636934705199995647" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvvF4g0vOw-zZBk3u1wLE4Gsm4lMNBcHHILA6vKF_GTdQTCVmzDusvcW9-uUfgHi6pBty7jEGMjccW-iSS_EomxBZo0rIUp82c7sBSU6OrfTbFqlbh0WoEmgViEgGIt6fZf6I0jg1&amp;t=ffffffffa580202a" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8ONTmrzZDL46pNc2daBgOpor2rhyaXauSqnhwFjD0_8la176Z2hqLRSXYBMfw7CXTIM9r84uo1utTi1xcNuPoioSGqX8h7xD_2EYvvXon63CQ7W_rQcVwB0khTlJ7Kz_YXsvhd9c1&amp;t=ffffffffa580202a" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B8EC5F6D">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="aQ1g9mSj1Yw2yU58BXePgX1RV78YpjRzA4OSGCJPM5lVJIaCFfQO6aTRtIKZ4XRD9wyI/E4MHL4xz1kNvEhuXLCUv/z+b8rAbtBLb/ea1DvVXqjihnHH58EyFSy9eBei5lJ+aiXHGTltInnFFQovay54gjuIS0d5J3+wVgQD1C9qrd1DijMKNaKAiv7nseUfoHUtzDnoctSDHrdbNP6dopLNVthruSBmmmecKvCqiwob4TbnlMgnjcxzOsriMSLh6vKtjuur7Aes8nYjP38VyN7eLRpO8dJhRR7zaeMqp93zZY1YWQHs9sz7sJJ0n0yI5H+F6b64B7QuHd0/j6kj7RSBFZlezhrNGsObJOQ4lZAoTu771h6Y5DerUrnw0tb2/aLgydqDar5QRcSaqngVNpmZk4DFC3VvZ+1v0JoJK52KrLJrd3dIgZFiLijepzwP/0Mb+6SM29g0L1haD7UsPtAQM9nhIvGUOGo9qLxm8M8dtQU8GaNp0G1Pv0OF1furSgxzBl9OgwbhtUztZ4R1s5RkhN2FbC2gqJV5H2paUzWXMsFOTtuDc4phbliVzEjwoTtPnRtoiqMY2UVCEkKrwZWL3hOXboNLEfHfrGbehsCkbY554Pkt5YZpR9CqTPpavGievjw6U0tIni93BabuP2yjIDB2oqGNOZP0et9jo6NapCMU0uIv6c0RjY9DiYQ8ppITYgWYvLjPRgThmQeSUikHU0O2Opgg+zN68+cK2Q3z3XPV7azACwKM0yupCSQKechr8vddXSizbgN4CkJYftaO6ME3BOY1JNEfg6bTxEWuOF4Lvo+kS3iqEHX0W5IXsX2QO1P0an/Q1qyFzjZfbIMiNARfxNynaGRpjTVrVeJSAhbkbenU2Xr7djMFwBsGQv4rW7752p5vE7STb964vxTLripKzcGQusNz6b+cdJYp7AFxmmiI3TQNbKS5mg1v7G1s5JhF2T0ASCrqCM+K7Er67zjou6NVHUGlfHzpxKBJKVgDMWggaF20QHUb05gF4ZF6n4uWJ2gK+t2IzVMd6NENFXaEA0gh58QdmVNoVOyfhfFWpbbR0U9CWkpRmCJfUl7aKah4W0KXH4qFyce5HasRUKcvBlddGlceJywQY4ZQ5CxVi88SdFgyfdmsgrUWO+0PKzG4QaTPqvYwuxlz8nnbhxUel9lD2cHXPmnjY38835naxMjLXOt9ywL2kOpOOBXGU6cTKli8JL26J97n9o80oRJXDnx+U3Sc+HzfyHNU3DiaUNGaxr39OV1wc62s1obywxEoqtFarnomzuQC3x9ewtq1E4OdK3sPmyqPwWpFVLsP0jBLaOoija8hfhS5YT8uiDuCNumDMXBB3xvJ8+7RaDc11ZVERJL/lda4LVQADXJtgZsUUv/M7yx8lxKoOP4k37x0POPZr5la8HQqgzzwpkvDk7OXTfniRRedAGvKPlTChMK+lJsIcbwcyZYMa9VaUMyEmJ0/Y+/xudnZGmCGwVZOxh2AfB8/mbt15/75OkltnKHHfIXyjQ0xNBeNbA+FP2KIJJolOvKU8JB1IebryRjprS9/0QqRYZWyixUkVSX4v2vlwnAn3Js17A7BE1ih3bTHK8sYj0ej3TmPqRdpnMtkxWEZNVDyhFwcROHQEL4eSwb7TdHEjwGbZd6DWYehRC5xBE223aRSpzcVY3/a4Dra/doPobH6UuE8JIVztcvOuLbpgmET/4kYhfdQiVykX6cR3yIdQOrdaVKT0vSefZCoYAFmcLN6AOdHmqi/NPATp91xAQErmLigXMSXiTTmgPJR0JfCBR1KD6J4RU99EEeIsi0JYGbg8qpMOltvhgCL9ZUf0O/iRG+VbUgOymJgUHREN3RPxWCx/azp/k+F4i3lECkkSgYrMdNtjUnz6q9CLpZ5VC7y44GDtFFvntx7IVbVeODuNchR02+2JI9t9tL9S89rXUnOiWra7i5UirDzg2M0uOehbIwPkp4/CoEV3w390aq8NR7yMPI+IBqQtP/AvFTLsSqlTbNxVDuoPe9qriaLt6mpBZ9/ZslMEN7ePhYlDi+i0PvUkZzytOCnBgzlYpXWDWSYTj+9rq+WMe2uoLWXgZ4spCWHDcIFzQq+8PUB3zBpmwhxYTePCmvB1LHSEUwYpoysWMqk1qtcVn1VGUHkwB6Z36G5ErpdlKWgkw==">
+</div>
+
+        <div id="timeout" style="display: none; width: 550px;" onmousemove="ResetTimers();">
+            <div style="font-weight: bold; font-size: 16px;">Warning: Your Session Is About To Expire</div>
+            <div style="font-size: 12px; margin-top: 10px;">
+                You will be automatically redirected to the Supreme Insight Page in the event this session expires.<br>
+                To avoid being signed out, please close out this window within the next 10 minute.
+            </div>
+        </div>
+
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['tctl00$ContentPlaceHolder1$ctl00','ContentPlaceHolder1_ctl00','tctl00$ContentPlaceHolder1$ctl01','ContentPlaceHolder1_ctl01'], [], ['ctl00$ContentPlaceHolder1$btnLevel2Export','ContentPlaceHolder1_btnLevel2Export','ctl00$ContentPlaceHolder1$btnExport','ContentPlaceHolder1_btnExport','ctl00$ContentPlaceHolder1$btnExportLevel2LockLoan','ContentPlaceHolder1_btnExportLevel2LockLoan'], 90, 'ctl00');
+//]]>
+</script>
+
+        <noscript><center><h3>Your browser does not support JavaScript! <br />Please enable JavaScript.</h3></center></noscript>
+        
+        <div id="div-main-content" style="min-height: 600px; width: 1890px; margin: 0px auto;">
+            
+            <div style="float: none; clear: both"></div>
+            <div id="backgroungImg" style="height: 50px; background-image: none; float: right; width: 100%; background-color: rgb(159, 0, 0);">
+                <img id="headerimg" src="/images/banner-blast.jpg" style="width: 80%; cursor: pointer; height: 100%;">
+                
+                <div style="float: right; color: #fff; margin-top: 10px; font-size: 12px; margin-right: 5px; width: 19%">
+                    <div style="width: 24px; height: 24px; float: left; margin-right: 20px;">
+                        
+                        
+                    </div>
+                    <div id="div-impersonate-user" style="float: right; margin-top: 4px;">
+                        
+                        <div id="ImpersonateUsers" style="float: right; width: 180px; height: 25px;" class="ui-igcombo-wrapper"><div class="ui-igcombo ui-widget ui-state-default ui-corner-all ui-unselectable" unselectable="on"><div class="ui-igcombo-button ui-state-default ui-unselectable ui-igcombo-button-ltr ui-corner-right" unselectable="on" title="Show drop-down"><div class="ui-igcombo-buttonicon ui-icon-triangle-1-s ui-icon"></div></div><div class="ui-igcombo-clear ui-unselectable" unselectable="on" title="Clear value" style="display: block;"><div class="ui-igcombo-clearicon ui-icon-circle-close ui-icon"></div></div><div class="ui-igcombo-fieldholder ui-igcombo-fieldholder-ltr ui-corner-left"><input type="text" class="ui-igcombo-field ui-corner-all" autocomplete="off" placeholder="select..."></div><input type="hidden" class="ui-igcombo-hidden-field" name="ImpersonateUsers" value="vivek.prasad"></div></div>
+                        <input type="hidden" name="ctl00$hdnImpersonateShowHide" id="hdnImpersonateShowHide" value="vivek.prasad">
+                        <input type="submit" name="ctl00$btnImpersonate" value="Impersonate" id="btnImpersonate" class="btnSearch" style="display: none">
+                    </div>
+                    <div id="div-userlogin-name" style="display:none;margin-top:5px;">
+                        <span>Login : </span>
+                        <span id="lbluser" style="font-size: 14px;font-weight:bold;">Vivek Prasad</span>
+                    </div>
+                    <input type="hidden" name="ctl00$hdnImpersonate" id="hdnImpersonate">
+                    <input type="hidden" name="ctl00$hdnuser" id="hdnuser" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnadmin" id="hdnadmin" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnExport" id="hdnExport" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnIsUserRmOrCorp" id="hdnIsUserRmOrCorp" value="0">
+                    <input type="hidden" name="ctl00$hdnGroups" id="hdnGroups">
+                    <input type="hidden" name="ctl00$hdnReport" id="hdnReport" value="blast">
+                    <input type="hidden" name="ctl00$hdnBEA" id="hdnBEA" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnGrpSelectionChange" id="hdnGrpSelectionChange">
+                    <input type="hidden" name="ctl00$hdnUsersViewPermission" id="hdnUsersViewPermission">
+                    <input type="hidden" name="ctl00$hdnBlastUserLevel" id="hdnBlastUserLevel" value="1">
+                    <input type="hidden" name="ctl00$hdnDomaon" id="hdnDomaon">
+
+                    <input type="hidden" name="ctl00$hdnDisplayDashboards" id="hdnDisplayDashboards">
+                    <input type="hidden" name="ctl00$hdnPresentation" id="hdnPresentation" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnCurrentReport" id="hdnCurrentReport">
+                </div>
+            </div>
+            <div style="float: none; clear: both"></div>
+            <div style="clear: both; float: none;"></div>
+
+            <span id="lblMsg"></span>
+
+            <div id="divdashboard">
+                <div style="clear: both; float: none;"></div>
+                
+    <div>
+        <div style="clear: both; float: none;"></div>
+        
+        <div id="Succ" class="alert-green" style="display: none; position: fixed; z-index: 99999999999; width: 1000px;">
+            <h4>Success!</h4>
+            <span id="ContentPlaceHolder1_lblSuccMsg"></span>
+        </div>
+        <div id="Err" class="alert-red" style="display: none; position: fixed; z-index: 99999999999; width: 1000px; margin: 5px auto; text-align: center; left: 48%; transform: translateX(-49%);">
+            <h4>Error!</h4>
+            <span id="ContentPlaceHolder1_lblErrorMsg"></span>
+        </div>
+        <div id="Inf" class="alert-blue" style="display: none; position: fixed; z-index: 99999999999; width: 1000px;">
+            <h4>Information!</h4>
+            <span id="ContentPlaceHolder1_lblInfoMsg"></span>
+        </div>
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnExportType" id="ContentPlaceHolder1_hdnExportType">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnDetail" id="ContentPlaceHolder1_hdnDetail">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnGroups" id="ContentPlaceHolder1_hdnGroups">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnConsolidate" id="ContentPlaceHolder1_hdnConsolidate">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnBranch" id="ContentPlaceHolder1_hdnBranch">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnBranchType" id="ContentPlaceHolder1_hdnBranchType">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnRegions" id="ContentPlaceHolder1_hdnRegions">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnStDate" id="ContentPlaceHolder1_hdnStDate">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnEndDate" id="ContentPlaceHolder1_hdnEndDate">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnSearch" id="ContentPlaceHolder1_hdnSearch">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnYearBy" id="ContentPlaceHolder1_hdnYearBy">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnParent" id="ContentPlaceHolder1_hdnParent">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnLoanDetailShowInExcel" id="ContentPlaceHolder1_hdnLoanDetailShowInExcel">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnLoanofficer" id="ContentPlaceHolder1_hdnLoanofficer">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnProductCode" id="ContentPlaceHolder1_hdnProductCode">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnLoanPurpose" id="ContentPlaceHolder1_hdnLoanPurpose">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnLoanType" id="ContentPlaceHolder1_hdnLoanType">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnloanNumberExport" id="ContentPlaceHolder1_hdnloanNumberExport">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnFundedStDate" id="ContentPlaceHolder1_hdnFundedStDate">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnFundedEndDate" id="ContentPlaceHolder1_hdnFundedEndDate">
+        <span style="display: none;"><input id="ContentPlaceHolder1_isGroupByVendor" type="checkbox" name="ctl00$ContentPlaceHolder1$isGroupByVendor"><label for="ContentPlaceHolder1_isGroupByVendor">Is Group By LO</label></span>
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnExportLevel4" id="ContentPlaceHolder1_hdnExportLevel4">
+        <span style="display: none;"><input id="ContentPlaceHolder1_isFundedLoansByDetail" type="checkbox" name="ctl00$ContentPlaceHolder1$isFundedLoansByDetail"><label for="ContentPlaceHolder1_isFundedLoansByDetail">Funded Loans By Detail</label></span>
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnOnLoadtype" id="ContentPlaceHolder1_hdnOnLoadtype">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnOnLoadValue" id="ContentPlaceHolder1_hdnOnLoadValue">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnFundedLoansDetailLoanNumber" id="ContentPlaceHolder1_hdnFundedLoansDetailLoanNumber">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnFundedLoansLoanNumber" id="ContentPlaceHolder1_hdnFundedLoansLoanNumber">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnIsLoanFoundedDeails" id="ContentPlaceHolder1_hdnIsLoanFoundedDeails">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnRedateDetail" id="ContentPlaceHolder1_hdnRedateDetail">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnPrdCompLoanType" id="ContentPlaceHolder1_hdnPrdCompLoanType">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnPrdCompGroupBy" id="ContentPlaceHolder1_hdnPrdCompGroupBy">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnGroupbyproduct" id="ContentPlaceHolder1_hdnGroupbyproduct">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnVarianceType" id="ContentPlaceHolder1_hdnVarianceType">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnOperationStaff" id="ContentPlaceHolder1_hdnOperationStaff">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnLevel4Regions" id="ContentPlaceHolder1_hdnLevel4Regions">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnAccount" id="ContentPlaceHolder1_hdnAccount">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnVarianceBranch" id="ContentPlaceHolder1_hdnVarianceBranch">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnVarianceRegions" id="ContentPlaceHolder1_hdnVarianceRegions">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnVarianceStartDate" id="ContentPlaceHolder1_hdnVarianceStartDate">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnVarianceEndDate" id="ContentPlaceHolder1_hdnVarianceEndDate">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnVarianceSearchBy" id="ContentPlaceHolder1_hdnVarianceSearchBy">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnGroupByAccount" id="ContentPlaceHolder1_hdnGroupByAccount">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnDateRange" id="ContentPlaceHolder1_hdnDateRange">
+        
+        
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$txtYear" id="ContentPlaceHolder1_txtYear">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnExportFileType" id="ContentPlaceHolder1_hdnExportFileType">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnBranches" id="ContentPlaceHolder1_hdnBranches">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnMonth" id="ContentPlaceHolder1_hdnMonth">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdndayMonth" id="ContentPlaceHolder1_hdndayMonth">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnLLProductCode" id="ContentPlaceHolder1_hdnLLProductCode">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnLLYear" id="ContentPlaceHolder1_hdnLLYear">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnRenameCol" id="ContentPlaceHolder1_hdnRenameCol">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnColumsLst" id="ContentPlaceHolder1_hdnColumsLst">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnReOrderPriorYearColumnAllowedMonths" id="ContentPlaceHolder1_hdnReOrderPriorYearColumnAllowedMonths" value="1?2">
+        
+        
+
+        
+        <div style="display: none;">
+            <input type="submit" name="ctl00$ContentPlaceHolder1$btnExport" value="Export" id="ContentPlaceHolder1_btnExport" class="btnSearch" style="float: right;">
+        </div>
+        <div style="clear: both; float: none;"></div>
+        <div id="div-header" style="margin-top: 10px; font-size: 12px;">
+            <div>
+                <div id="div-start-date-text" class="float-left" style="width: 115px;">Start Date</div>
+                <div id="div-end-date-text" class="float-left" style="width: 115px;">End Date</div>
+                <span id="div-reg-br-txt" class="float-left" style="width: 110px;">Branches/Regions:</span>
+            </div>
+            <div style="clear: both; float: none;"></div>
+            <div style="margin-top: 5px;">
+                <div id="div-start-date" style="width: 115px; float: left;">
+                    <div class="float-left">
+                        <input name="ctl00$ContentPlaceHolder1$txtStartDt" type="text" value="01/01/2019" id="ContentPlaceHolder1_txtStartDt" class="DatePicker hasDatepicker" style="width: 100px">
+                    </div>
+                </div>
+                <div id="div-end-date" style="width: 115px; float: left;">
+                    <div class="float-left">
+                        <input name="ctl00$ContentPlaceHolder1$txtEndDt" type="text" value="12/31/2019" id="ContentPlaceHolder1_txtEndDt" class="DatePicker hasDatepicker" style="width: 100px">
+                    </div>
+                </div>
+                <div style="width: 375px; float: left;">
+                    <div id="div-branches" class="float-left" style="height: 26px;">
+                        <div style="float: left;">
+                            <input name="ctl00$ContentPlaceHolder1$tstTVSearch" type="text" id="ContentPlaceHolder1_tstTVSearch" placeholder="Search..." style="height:20px;width:340px;text-indent: 5px;">
+                        </div>
+                        <div id="div-clear-branches" class="ui-icon-circle-close ui-icon" style="position: absolute; display: none; margin-left: 328px; margin-top: 5px;"></div>
+                        <div style="position: absolute; margin-left: 343px;">
+                            <img id="img-tree-view" isopentreeview="open" style="height: 27px;" src="images/ddl-icon.png">
+                        </div>
+                        <div id="div-tree-detail">
+                        </div>
+                        <div id="div-treeview" style="display: block;">
+                            <div id="tree" class="branches-tree ui-widget ui-igtree" data-scroll="true"><ul class="ui-igtree-collection ui-igtree-root ui-widget-content" data-depth="0"><li class="ui-igtree-node ui-igtree-noderoot ui-igtree-parentnode" data-path="0" data-value="Branches / Regions" data-role="node"><span data-role="expander" data-exp="true" class="ui-igtree-expander ui-icon ui-icon-triangle-1-s"></span><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Branches / Regions</a><ul style="" data-depth="1"><li class="ui-igtree-node ui-igtree-parentnode" data-path="0_0" data-value="Alcorn Region" data-role="node"><span data-role="expander" data-exp="false" class="ui-icon ui-icon-triangle-1-e ui-igtree-expander"></span><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Alcorn Region</a><ul style="display: none" data-depth="2"><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_0_0" data-value="Singh Chandramohan - 783" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Singh Chandramohan - 783</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_0_1" data-value="Prasad Vivek - 784" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Prasad Vivek - 784</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_0_2" data-value="DeBoer Oliver - 785" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">DeBoer Oliver - 785</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_0_3" data-value="Hill Shane - 786" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Hill Shane - 786</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_0_4" data-value="Sanders John - 787" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Sanders John - 787</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_0_5" data-value="Alcorn Clinton - 788" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Alcorn Clinton - 788</a></li></ul></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_1" data-value="Islam Syed - 298" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Islam Syed - 298</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_2" data-value="Beltran Anna - 406" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Beltran Anna - 406</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_3" data-value="Fellah Jason - 451" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Fellah Jason - 451</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_4" data-value="Starr Shelly - 452" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Starr Shelly - 452</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_5" data-value="Markevich Lindy - 709" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Markevich Lindy - 709</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_6" data-value="Shelton Laura - 725" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Shelton Laura - 725</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_7" data-value="Tompkins Tammy - 726" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Tompkins Tammy - 726</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_8" data-value="Fowler Samuel - 727" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Fowler Samuel - 727</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_9" data-value="Lowe Desiree - 757" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Lowe Desiree - 757</a></li><li class="ui-igtree-node ui-igtree-node-nochildren" data-path="0_10" data-value="Recotta Michael - 907" data-role="node"><span data-chk="off" data-role="checkbox" class="ui-state-default ui-corner-all ui-igcheckbox-normal"><span class="ui-icon ui-icon-check ui-igcheckbox-normal-off"></span></span><a href="#" target="_self" class="ui-corner-all">Recotta Michael - 907</a></li></ul></li></ul></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="div-chkbx-columns">
+                    <div id="div-variance-dropdown" style="float: left; margin-left: 11px; margin-right: 11px; margin-top: 1px; font-weight: 500; font-family: Arial; font-size: 13.33px; width: 200px; height: 26px; display: none;">
+                        <span id="varianceText" style="width: 110px; float: left; font-size: 12px; margin-top: -19px; display: none;">Variance:</span>
+                        <span id="varianceDropDown" style="height: 26px; display: none;"></span>
+                    </div>
+                    <div id="div-checkbox" style="float: left; font-size: 10.5px; margin-top: -5px; width: 248px">
+                        <div id="div-chkConsolidate" style="float: left; width: 80px;">
+                            <span onchange="onConsolidateChange()"><input id="ContentPlaceHolder1_chkConsolidate" type="checkbox" name="ctl00$ContentPlaceHolder1$chkConsolidate"><label for="ContentPlaceHolder1_chkConsolidate">Consolidate</label></span>
+                        </div>
+
+                        <div id="div-chkPriorYear" style="float: left; width: 70px;">
+                            <input id="ContentPlaceHolder1_chkPriorYear" type="checkbox" name="ctl00$ContentPlaceHolder1$chkPriorYear"><label for="ContentPlaceHolder1_chkPriorYear">Prior Year</label>
+                        </div>
+                        <div id="div-chkDollarPerLoan" style="float: left; width: 70px;">
+                            <span class="chkbx-show-hide-columns"><input id="ContentPlaceHolder1_chkDPL" type="checkbox" name="ctl00$ContentPlaceHolder1$chkDPL"><label for="ContentPlaceHolder1_chkDPL">$$/Loan</label></span>
+                        </div>
+                        <span class="chkbx-show-hide-columns" style="display: none;"><input id="ContentPlaceHolder1_chkAMT" type="checkbox" name="ctl00$ContentPlaceHolder1$chkAMT"><label for="ContentPlaceHolder1_chkAMT">$$ Amount</label></span>
+                        <span class="chkbx-show-hide-columns" style="display: none;"><input id="ContentPlaceHolder1_chkBPS" type="checkbox" name="ctl00$ContentPlaceHolder1$chkBPS"><label for="ContentPlaceHolder1_chkBPS">BPS</label></span>
+                        <div id="div-chkPYCM" style="float: left; width: 250px;">
+                            <input id="ContentPlaceHolder1_chkPYCM" type="checkbox" name="ctl00$ContentPlaceHolder1$chkPYCM"><label for="ContentPlaceHolder1_chkPYCM">Current Month/Prior Year</label>
+                            <div style="float: right; margin-top: 5px;">
+                                <a id="hrefShowDetail1" style="text-decoration: underline; margin-left: 5px;">Show Monthly Detail</a>
+                                <a id="hrefShowDetail2" style="text-decoration: underline; display: none; margin-left: 5px;">Show Monthly Detail</a>
+                                <a id="hrefShowDetail3" style="text-decoration: underline; display: none; margin-left: 5px;">Show Monthly Detail</a>
+                            </div>
+                        </div>
+                        
+
+                        
+                    </div>
+
+                </div>
+                <div id="div-submitt-btn" style="display: inline-flex; float: left; margin-left: 20px; width: 236px">
+                    <div id="divPresentation" style="margin-right: 5px; display: inline-flex;">
+                        
+                        <label class="switch" style="margin-top: 0px">
+                            <input type="checkbox" id="chkPresentationMode">
+                            <div class="slider round"></div>
+                        </label>
+                        
+                    </div>
+
+                    <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="Submit" id="ContentPlaceHolder1_btnSubmit" class="btnSearch" style="margin-right: 5px; float: left;">
+                    <button style="float: right;" class="img-export btnSearch" disabled="disabled">Export</button>
+
+
+                </div>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div>
+
+
+        
+
+
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="div-users-permission" style="display: none;">
+            <div style="padding: 5px;">
+                <div class="div-permission-head"></div>
+                <div class="div-permission-close">X</div>
+            </div>
+            <div style="clear: both; float: none;"></div>
+            <hr>
+            <div id="div-perm-users-data"></div>
+        </div>
+
+        <div style="clear: both; float: none;"></div>
+
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogLevel4PrdComp" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div id="PrdCompImage" style="border-bottom: 2px solid; display: none;">
+                <div style="width: 420px; margin: 0 auto;">
+                    <img src="images/supremelogo.png">
+                </div>
+            </div>
+            <div style="clear: both; float: none;"></div>
+            <div id="Level4ProductionCompasationhead" style="font-weight: bolder; font-size: 15px;"></div>
+            <div id="Level4ProductionCompasationbuttons" style="margin-top: 40px"></div>
+            <div id="Level4ProductionCompasationGrid" style="margin-top: 40px"></div>
+            <div style="clear: both; float: none;"></div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+        <div id="dialogLevel4PrdCompbuttons" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div class="headers"></div>
+            <div id="populateGridprdcompdetail"></div>
+            <div style="clear: both; float: none;"></div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+
+
+
+        
+        <div id="DivHoverVolume" style="display: none; position: fixed; z-index: 1; top: 20px; left: 1100px; background: white; height: auto; width: auto">
+            <div id="Div">
+            </div>
+        </div>
+        <div id="DicCalcBmVolume" style="display: none; position: fixed; z-index: 1; top: 20px; left: 1100px; background: white; height: auto; width: auto">
+            <div class="DivDetail">
+            </div>
+        </div>
+        <div id="dialogLoackedLoansByLP" tabindex="0" class="ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="float: right">
+                <div id="ContentPlaceHolder1_ctl00">
+	
+
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnExportLevel2LockLoan" value="Export" id="ContentPlaceHolder1_btnExportLevel2LockLoan" class="btnSearch btnExportProductLoclLoans" style="font-size:12px;display: none">
+                    
+</div>
+            </div>
+            <h3 style="font-size: 12px; margin-left: 50px;"></h3>
+            <div style="font-size: 12px; margin-left: 50px;" class="divBranches"></div>
+            <div style="margin-bottom: 27px;">
+                <img id="imgCloseDialogLoackedLoansByLP" style="float: right; margin-right: 50px; margin-top: 10px; cursor: pointer;" src="images/Arrow_back.png" height="20" width="20">
+            </div>
+            <div>
+                <div id="divProductByProductCodeGrid" style="border: 1px solid #000; width: 90%; margin: auto">
+                    <div style="font-weight: bold; font-size: 13px; text-align: center">Sort By Product</div>
+                    <div id="Popuplevel2productProductCode" style="margin-top: 5px"></div>
+                </div>
+                <div style="margin-top: 10px"></div>
+                <div style="border: 1px solid #000; width: 90%; margin-top: 10px; margin: auto">
+                    <div style="font-weight: bold; font-size: 13px; text-align: center">Sort By Product Type</div>
+                    <div id="Popuplevel2product" style="margin-top: 5px"></div>
+                </div>
+                <div style="margin-top: 10px"></div>
+                <div id="divProductbyLoanPurpose" style="border: 1px solid #000; width: 90%; margin-top: 10px; margin: auto">
+                    <div style="font-weight: bold; font-size: 13px; text-align: center">Sort By Purchase vs Refinance</div>
+                    <div id="PopuplevelProductByLoanPurpose" style="margin-top: 5px"></div>
+                </div>
+            </div>
+        </div></div>
+
+        <div id="dialogFundedLoanOverview" tabindex="0" class="ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <h3 style="font-size: 12px;"></h3>
+            <div style="font-size: 12px;" class="divBranches"></div>
+            <div style="float: right; margin-bottom: 5px; margin-top: -30px;">
+                <input id="btnFundedLoanExportFile" style="display: none; font-size: 12px;" class="btnSearch" type="button" value=" Export ">
+            </div>
+            <div style="margin-bottom: 27px;">
+                <img id="imgFundedLoanOverview" style="float: right; margin-right: 10px; cursor: pointer;" src="images/Arrow_back.png" height="20" width="20">
+            </div>
+            <div id="gvPivotFundedLoanOverview"></div>
+        </div></div>
+
+        
+        <div id="dialogLoackedLoansLoanpurpose" tabindex="0" class="ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <h3 style="font-size: 12px;"></h3>
+            <div style="margin-bottom: 27px;"></div>
+            <div style="font-size: 12px;" class="divBranches"></div>
+            <div style="margin-bottom: 27px;">
+                <img id="imgCloseDialogLoackedLoansLoanpurpose" style="float: right; margin-right: 10px; cursor: pointer;" src="images/Arrow_back.png" height="20" width="20">
+            </div>
+            <div id="popupGridLoanPurpose"></div>
+        </div></div>
+        <div id="dialogLoackedPage" tabindex="0" class="ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <h3 style="font-size: 12px;"></h3>
+            <div style="font-size: 12px;" class="divBranches"></div>
+            <div style="float: right; margin-bottom: 5px; margin-top: -30px;">
+                <input id="btnExportFile" style="display: none; font-size: 12px;" class="btnSearch" type="button" value=" Export ">
+
+            </div>
+            <div style="margin-bottom: 27px;">
+                <img id="imgCloseDialogLoackedPage" style="float: right; margin-right: 10px; cursor: pointer;" src="images/Arrow_back.png" height="20" width="20">
+            </div>
+            <div id="gvPivotOverView"></div>
+        </div></div>
+        <div id="dialogLoackedLoansByLO" tabindex="0" class="ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+
+            <div style="float: right">
+                <div id="ContentPlaceHolder1_ctl01">
+	
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnLevel2Export" value="Export" id="ContentPlaceHolder1_btnLevel2Export" class="btnSearch" style="font-size:12px;">
+                    
+</div>
+            </div>
+            <h3 style="font-size: 12px;"></h3>
+            <div style="font-size: 12px;" class="divBranches"></div>
+            <div style="margin-bottom: 27px;">
+                <img id="imgCloseDialogLoackedLoansByLO" style="float: right; margin-right: 10px; display: none; cursor: pointer;" src="images/Arrow_back.png" height="20" width="20">
+            </div>
+            <div id="popupGrid"></div>
+        </div></div>
+        <div id="dialogLockedLoansProductDetails" tabindex="0" class="ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="float: right">
+
+                <input id="btnExportPD" class="whtExportType" exporttype="ProductCode" style="font-size: 13px; width: 90px" type="button" value="Export">
+            </div>
+            <h3 style="font-size: 12px;"></h3>
+
+            <div style="margin-bottom: 9px;"></div>
+            <div style="margin-bottom: 27px;">
+                <img id="imgCloseDialogLockedLoansProductDetails" style="float: right; margin-right: 10px; cursor: pointer;" src="images/Arrow_back.png" height="20" width="20">
+            </div>
+            <div style="font-size: 12px;" class="divBranches"></div>
+
+            <div id="popupLockedLoansproductDetail" style="margin-top: 5px"></div>
+        </div></div>
+        <div id="dialogLoanOfficerDetail" tabindex="0" class="ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="font-size: 12px;" class="divBranches"></div>
+            <div style="margin-bottom: 27px;">
+                <img id="imgCloseDialogLoanOfficerDetail" style="float: right; margin-right: 10px; cursor: pointer;" src="images/Arrow_back.png" height="20" width="20">
+            </div>
+            <div id="populategirdlodetail" style="margin-top: 5px"></div>
+        </div></div>
+        <div id="dialogLockLoan" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div>
+                <div id="level4ImageBlast" style="border-bottom: 2px solid;">
+                    <div style="width: 420px; margin: 0 auto;">
+                        <img src="images/supremelogo.png">
+                    </div>
+                </div>
+                <div style="clear: both; float: none;"></div>
+                <label id="level4headLockLoan" style="font-weight: bolder; font-size: 15px; float: left;">Locked Loan Details</label>
+                
+                <div style="clear: both; float: none;"></div>
+                <div id="div-head-level4LockLoan" style="font-weight: bolder; font-size: 12px; word-wrap: break-word;">
+                </div>
+                <div id="div-tblLevel4LockLoan">
+                    <table id="tblLevel4LockLoan"></table>
+                </div>
+                <div style="clear: both; float: none;"></div>
+            </div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+        
+
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialog" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div>
+                <div id="level4Image" style="border-bottom: 2px solid;">
+                    <div style="width: 420px; margin: 0 auto;">
+                        <img src="images/supremelogo.png">
+                    </div>
+                </div>
+                <div style="clear: both; float: none;"></div>
+                <label id="level4head" style="font-weight: bolder; font-size: 15px; float: left;">Level 4 Detail</label>
+                <button style="float: right; width: 80px; height: 25px; font-size: 12px; display: none;" class="exportLevel4 btnSearch">Export</button>
+                <div style="clear: both; float: none;"></div>
+                <div id="div-head-level4" style="font-weight: bolder; font-size: 12px; word-wrap: break-word;">
+                </div>
+                <div id="div-tblLevel4">
+                    <table id="tblLevel4"></table>
+                    <table id="tblLevel4Variance" style="display: none"></table>
+                </div>
+                <div style="clear: both; float: none;"></div>
+            </div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogVariance4" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div>
+
+                <div style="clear: both; float: none;"></div>
+                <label id="varianceLevel4head" style="font-weight: bolder; font-size: 15px; float: left;">Variance Level 4 Detail</label>
+                <button style="float: right; width: 80px; height: 25px; font-size: 12px; display: none;" class="exportVarianceLevel4 btnSearch">Export</button>
+                <div style="clear: both; float: none;"></div>
+                <div id="div-head-variance-level4" style="font-weight: bolder; font-size: 12px; word-wrap: break-word;">
+                </div>
+                <div id="div-tblVarianceLevel4">
+                    <table id="tblLevel4VarianceGroup"></table>
+                </div>
+                <div style="clear: both; float: none;"></div>
+            </div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogVLVB" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="clear: both; float: none;"></div>
+            <div id="dialogVLVCtrls">
+            </div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogLevel5" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="clear: both; float: none;"></div>
+            <div id="dialogLevel5Ctrls">
+            </div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogLevel6" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="clear: both; float: none;"></div>
+            <div id="dialogLevel6Ctrls">
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogLev3" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div id="levelDetails"></div>
+
+            <input type="submit" name="ctl00$ContentPlaceHolder1$btnExportRebateMedical" value="Export" id="ContentPlaceHolder1_btnExportRebateMedical" class="btnSearch" style="float: right; margin-right: 5px; margin-bottom: 10px">
+            <div style="clear: both; float: none;"></div>
+            <div id="tblLevel6"></div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+        </div></div>
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogLockedLoansDeatil" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div id="LockedLoansDescription"></div>
+            <input type="submit" name="ctl00$ContentPlaceHolder1$btnExportLockLoans" value="Export" id="ContentPlaceHolder1_btnExportLockLoans" class="btnSearch" style="float: right; margin-right: 18px; font-size: 12px; margin-bottom: 2px">
+            <div style="clear: both; float: none;"></div>
+            <div id="tblLockedLoansDeatil"></div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+        </div></div>
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogUVB" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="clear: both; float: none;"></div>
+            <div id="dialogUVBCtrls">
+            </div>
+            <div style="clear: both; float: none;"></div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+        </div></div>
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogBEA" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="clear: both; float: none;"></div>
+            <div id="dialogBEACtrls">
+                <div style="margin-top: 5px;">
+                    <div style="width: 100%; text-align: center; font-size: 14px; font-weight: bold;">Break Even Analysis</div>
+                    <div style="font-size: 11px;">
+                        <div style="float: left; font-weight: bold; margin-right: 10px;">Selected Branches:</div>
+                        <div style="float: left;" id="div-bea-branches"></div>
+                        <div style="clear: both; float: none;"></div>
+                        <div style="float: left; font-weight: bold; margin-right: 10px;">For Month:</div>
+                        <div style="float: left;" id="div-bea-month"></div>
+                        <div style="clear: both; float: none;"></div>
+                        <div style="float: left; font-weight: bold; margin-right: 10px;">Cumulative Balance:</div>
+                        <div style="float: left;" id="div-cum-bal"></div>
+                        <div style="clear: both; float: none;"></div>
+                        <div style="float: left; font-weight: bold; margin-right: 10px;">Average Loan:</div>
+                        <div style="float: left;" id="div-avg-loan"></div>
+                        <div style="clear: both; float: none;"></div>
+                        <div style="float: left; font-weight: bold; margin-right: 10px;">Gross Margin Per Loan:</div>
+                        <div style="float: left;" id="div-gmp-loan"></div>
+                        <div style="clear: both; float: none;"></div>
+                        <div style="float: left; font-weight: bold; margin-right: 10px;">Volume To Break Even:</div>
+                        <div style="float: left;" id="div-vol-to-be"></div>
+                        <div style="clear: both; float: none;"></div>
+                    </div>
+                </div>
+                <div style="clear: both; float: none;"></div>
+
+                <table id="tblBreakEvenAnalysis"></table>
+            </div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogGLR" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div style="margin-top: 10px; font-size: 12px;">
+                <div>
+                    <div class="float-left" style="width: 125px;">Start Date</div>
+                    <div class="float-left" style="width: 125px;">End Date</div>
+                </div>
+                <div style="clear: both; float: none;"></div>
+                <div style="margin-top: 5px;">
+                    <div id="div-glr-start-date" style="width: 125px; float: left;">
+                        <div class="float-left">
+                            <input name="ctl00$ContentPlaceHolder1$txtGLRStartDate" type="text" id="ContentPlaceHolder1_txtGLRStartDate" class="DatePicker hasDatepicker" style="width: 100px">
+                        </div>
+                    </div>
+                    <div id="div-glr-end-date" style="width: 125px; float: left;">
+                        <div class="float-left">
+                            <input name="ctl00$ContentPlaceHolder1$txtGLREndDate" type="text" id="ContentPlaceHolder1_txtGLREndDate" class="DatePicker hasDatepicker" style="width: 100px">
+                        </div>
+                    </div>
+                    <div style="width: 140px; float: left;">
+                        <input id="btnGLR" type="button" class="btnSearch" style="width: 130px" value="Launch GL Detail">
+                    </div>
+                    <div style="float: right;">
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnExportGL" value="Export GL Detail" id="ContentPlaceHolder1_btnExportGL" class="btnSearch" style="width:100px;">
+                    </div>
+                </div>
+                <div style="clear: both; float: none;"></div>
+            </div>
+            <div id="GridGLR"></div>
+            <div style="clear: both; float: none;"></div>
+            <div style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+        </div></div>
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="dialogVarianceMoreInformation" class="shadow ui-igdialog ui-dialog ui-widget ui-widget-content ui-corner-all" tabindex="0" style="z-index: 1000; outline: 0px; display: none;"><div class="ui-igdialog-header ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" zindex="-1" unselectable="on" style="display: block; outline: 0px;"><span class="ui-igdialog-headertext ui-dialog-title">&nbsp;</span><a class="ui-igdialog-headerbutton ui-corner-all ui-state-default ui-igdialog-buttonclose" data-id="close" href="#" role="button" title="Close" longdesc="Close"><span class="ui-igdialog-close-icon ui-icon ui-icon-close"></span></a></div><div class="ui-igdialog-content ui-widget-content ui-dialog-content" style="display: block;">
+            <div id="div-daily-variance" style="height: auto; font-size: 14px;">
+                <h4 style="margin-bottom: 15px; font-size: 16px; font-weight: 700; text-decoration: underline;">Variance</h4>
+                <p>
+                    This feature allows you to compare a single branch, multiple branches, or an entire region’s performance versus the prior day, month, or year to determine trends in revenue, expenses and production.<br>
+
+                    A financial month is not considered reconciled and/or closed until the 15th of the following month:<br>
+                    -  The daily variance is the 2 business days prior to the day the report is pulled. 
+                    <br>
+                    -  The variance columns only highlight those categories where a variance occurs.
+
+                </p>
+            </div>
+            <div id="div-MOM-variance" style="height: auto; font-size: 14px;">
+                <h4 style="margin-bottom: 15px; font-size: 16px; font-weight: 700; text-decoration: underline;">Variance</h4>
+                <p>
+                    This feature allows you to compare a single branch, multiple branches, or an entire region’s performance versus the prior day, month, or year to determine trends in revenue, expenses and production.<br>
+
+                    A financial month is not considered reconciled and/or closed until the 15th of the following month:<br>
+                    - If the month-over-month variance is run on the 1st-14th, BLAST will compare YTD 3 months prior to YTD 2 months prior. 
+                    <br>
+                    - If the month-over-month variance is run on the 15th-31st, BLAST will compare YTD 2 months prior to YTD 1 month prior. 
+
+                </p>
+
+            </div>
+            <div id="div-YOY-variance" style="height: auto; font-size: 14px;">
+                <h4 style="margin-bottom: 15px; font-size: 16px; font-weight: 700; text-decoration: underline;">Variance</h4>
+                <p>
+                    This feature allows you to compare a single branch, multiple branches, or an entire region’s performance versus the prior day, month, or year to determine trends in revenue, expenses and production.<br>
+
+                    A financial month is not considered reconciled and/or closed until the 15th of the following month:<br>
+                    - If the year-over-year variance is run on the 1st-14th, BLAST will compare YTD 2 months prior over the same month span for the prior year.                   
+                    <br>
+                    - If the year-over-year variance is run on the 15th-31st, BLAST will compare YTD 1 month prior over the same month span for the prior year. 
+
+                </p>
+
+
+            </div>
+            <div style="height: auto; font-size: 14px;">
+                <h4 style="margin-bottom: 15px; font-size: 16px; font-weight: 700; text-decoration: underline;">How to interpret the formatting:</h4>
+                <p>
+                    - If a line item is Revenue generating, positive variance amounts will be presented in green to indicate an increase in revenue, while negative variance amounts will be presented in red to indicate a decrease in revenue.<br>
+
+                    - If a line item is represents an Expense, positive variance amounts will be presented in red to indicate an increase in expense, while negative variance amounts will be presented in green to indicate a decrease in expense.
+                </p>
+            </div>
+
+            <div style="clear: both; float: none;"></div>
+        </div></div>
+
+        
+        <div style="clear: both; float: none;"></div>
+        <div id="div-all-tables" style="top: 5px;">
+            <div id="div-level-detail" style="margin-top: 0px; width: 100%; min-height: 450px;">
+                <div id="div-level-variance" style="margin-top: 0px; width: 100%; min-height: 450px;">
+                    <div style="clear: both; float: none;"></div>
+
+                    <div id="div-level1-container" style="display: none;">
+                        <div style="clear: both; float: none;"></div>
+                        <div style="clear: both; float: none;"></div>
+                        <div style="margin-top: 5px">
+                            <table id="tblLevel1" style="display: none;"></table>
+                        </div>
+                    </div>
+
+                    <div id="div-level-container">
+                        <div style="clear: both; float: none;"></div>
+                        <div style="margin-top: 5px">
+                            <table id="tblLevel2" style="display: none;"></table>
+                        </div>
+                    </div>
+
+                    <div id="div-level3-container">
+                        <div style="clear: both; float: none;"></div>
+                        <div id="div-tbl-3" style="margin-top: 5px">
+                            <table id="tblLevel3" style="display: none;"></table>
+                        </div>
+
+                    </div>
+                    <div id="div-level3-variance-container">
+                        <div style="clear: both; float: none;"></div>
+                        <div id="div-tbl-3-variance" style="margin-top: 5px">
+                            <table id="tblLevel3Variance"></table>
+                        </div>
+
+                    </div>
+                </div>
+                <div style="clear: both; float: none;"></div>
+            </div>
+            <div style="clear: both; float: none;"></div>
+            
+
+            
+
+            <div id="div-footer" style="height: 10px; font-size: 10px; text-align: center">
+                <p>
+                    *This system and the information contained herein is the property of Supreme Lending and constitutes Supreme Lending’s Trade Secrets and Proprietary and Confidential Information, the disclosure of which is strictly prohibited.
+                </p>
+            </div>
+
+            
+
+            <div style="display: none;">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnslAppraisal" id="ContentPlaceHolder1_hdnslAppraisal">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnIsCkdesc" id="ContentPlaceHolder1_hdnIsCkdesc">
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnGBLevel4" id="ContentPlaceHolder1_hdnGBLevel4">
+            </div>
+        </div>
+
+            </div>
+        </div>
+         <input type="hidden" name="ctl00$hdnSearchPermission" id="hdnSearchPermission">
+        <input type="hidden" name="ctl00$hdnStDatePermission" id="hdnStDatePermission">
+        <input type="hidden" name="ctl00$hdnEndDatePermission" id="hdnEndDatePermission">
+        <input type="hidden" name="ctl00$hdnuserPermission" id="hdnuserPermission">
+        <input type="hidden" name="ctl00$hdnExportIsType" id="hdnExportIsType">
+        <input type="hidden" name="ctl00$hdnIsBoss" id="hdnIsBoss">
+		<input type="hidden" name="ctl00$hdnexcelname" id="hdnexcelname">
+    
+
+
+</div></form><div id="__ig_wm__" class="ui-igtrialwatermark" style="position: fixed; bottom: 0px; right: 0px; z-index: 1000;"></div><div class="dx-gesture-cover" style="pointer-events: none;"></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><div class="ui-igcombo-list ui-widget ui-widget-content ui-corner-all ui-igcombo-no-top-corners ui-igcombo-no-border" style="height: 0px; width: 180px; left: 1720px; top: 47px; max-height: 360px;"><ul class="ui-igcombo-listitemholder"><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Addy Jolly</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Alfredo Madrid</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Amanda Biggs</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Andrew Stein</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Andy Insua</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Andy Thompson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Anna Beltran</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Ariff Khimani</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Asim Punjwani</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Becky Majerczyk</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Blair Katz</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Bobby Smith</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Bob Comstock</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brad Roles</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brandon Polito</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brendan Tabor</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brian Bailey</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brian Fiore</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brian Humphrey</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brian Jahanbin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brian Phillips</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Brooke Cisneros</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Caleb Ward</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Camilo Gutierrez</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Carlos Rivera</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Carolyn Hensley</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Cathy Anderson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Chandramohan Singh</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Chris Duffy</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Chris Gilmour</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Chris  King</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Chris Lees</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Chris  Murray</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Chuck Keith</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Chuck Roach</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Clinton Alcorn</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Cody Castle</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Cory Martilla</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Dale Petrillo</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Dana Malia</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Danielle Pollack</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Darren Gussick</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">David Redmond</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">David Ross</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Dean Schmidt</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Denise Castillo</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Denise Tomasini</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Derek Fasi</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Disan Loera</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Don McLelland</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Drew Davis</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Drew Sopha</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Dylan Gouthro</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Eric Phifer</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Eric Union</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Ethan Hormann</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Frank Brookshire</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Franky Bonilla</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Freeman Sawyer</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Garrett Stetzer</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Gary Meador</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Gopalrao Yadawadkar</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Greg Groff</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Greg Necastro</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Gregory Laywell</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Gus Triggas</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Harish Naidu</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jackie Duhon</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jackie Duhon1</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Janet Jackson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jason.Lewis</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jason Ozment</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jason Parris</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jason Pitarra</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jason Rasmusson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jason Young</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jeff Stipp</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jennifer Lawrie</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jessica Gonzales</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Joe Boggs</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">John McClellan</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Jorge Madrid</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">JR Teto</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Justin Lees</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Kane Silverberg</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Kathryn Crowder</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Kathy Rippel</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Kelly Howard</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Ketul Shah</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Kevin Jornlin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Kevin Ranck</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Kevin Reid</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Kristy Lohse</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Laila Razaali</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Larry Brand</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">LeeAnn Ly</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Lina Armstrong</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Lisa Flood</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Liz Liebig</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Luke Welling</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Manisha Sarangi</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Marc Portugal</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Marc Starr</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Mario Vargas</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Mark D Schanze</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Martin Bruno</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Massi Ashrafi</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Matt Maltese</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Matt Walker</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Matthew McGuire</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Meggan McDonald</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Melanie Laywell</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Michael Haigh</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Michael Salondaka</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Michael Sohl</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Michael Swisher</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Mike Coffey</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Mike Drew</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Mike Fake</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Mike Larsen</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Mike Pierson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Mills Landon</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Minh Truong</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Molly VanLawick</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Nancy Davis</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Nayab Tahir</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Nick Patton</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Noor Punjwani</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Noor Surani</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Norb Theisen</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Owais Ali</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Patrick Flood</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Patrick Iglinsky</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Patrick Rooney</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">saleha khathun</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Pete Sung</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Phil Blankstein</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Richard A Lebourveau</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">R Saenz</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Ramakrishnan S</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rammil Quizon</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rene Sanchez</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rhonda Ritch</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rich Krupnik</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rick Hogle</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rick Kesseler</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rick Martin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Ricky Miles</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rock Martin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rodney Anderson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Rodney Malone</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Roshni Shetty</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Scott Brooks</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Scott Demich</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Scott Eaton</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Scott Everett</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Shane Hensley</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Sheri Martin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Sireesha Vasireddy</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Sreenath PB</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Stacey Geringer</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Steve Cantrell</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Steve Shuart</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Stuart Drew</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Susan Pomilia</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">svcQaFCCAutomationUser</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Syed Islam</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">T McIntosh</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Tevis Durbin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Thomas Crowder</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Tiffany Berryman</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Tim Nelson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Tom Blattau</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Tony Schmeck</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Tony Tylman</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Tracie Schmidt</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable ui-state-active" unselectable="on">Vivek Prasad</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Wayne Rohrbaugh</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" unselectable="on">Zuhaib Zaffar</li></ul></div></body></html>

@@ -1,0 +1,344 @@
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="X-UA-Compatible" content="IE=Edge"><link rel="SHORTCUT ICON" href="/images/sl-TabIco.ico" type="image/x-icon"><link href="images/apple-touch-icon.png" rel="icon"><link rel="apple-touch-icon" href="images/apple-touch-icon-iphone-60x60.png"><link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-ipad-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-iphone-retina-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-ipad-retina-152x152.png">
+    
+
+    <!-- Ignite UI Required Combined CSS Files -->
+    <link href="Infragestic/css/infragistics.theme.css" rel="stylesheet"><link href="Infragestic/css/infragistics.css" rel="stylesheet">
+
+    <!--CSS file specific for chart styling -->
+    <link href="Infragestic/css/infragistics.ui.chart.css" rel="stylesheet">
+
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/dx-map-lib/jquery-ui.js"></script>
+
+    <!-- Ignite UI Required Combined JavaScript Files -->
+    <script src="Infragestic/js/modernizr-latest.js"></script>
+    <script src="Infragestic/js/infragistics.core.js"></script>
+    <script src="Infragestic/js/infragistics.lob.js"></script>
+    <script src="Infragestic/js/infragistics.dv.js"></script>
+    
+    <script src="Infragestic/js/infragistics.ui.shared.js"></script>
+    <script src="Infragestic/js/infragistics.ui.grid.filtering.js"></script>
+
+    <link href="css/StyleSheet-V01.css?ver=5345" rel="stylesheet">
+
+    
+    <link href="Infragestic/2016.2/infragistics.theme.css" rel="stylesheet">
+    <link href="Infragestic/2016.2/infragistics.css" rel="stylesheet">
+    <link href="Infragestic/2016.2/infragistics.ui.treegrid.css" rel="stylesheet">
+
+    <script src="Infragestic/2016.2/modernizr-2.8.3.js"></script>
+    <script src="Infragestic/2016.2/jquery-1.11.3.min.js"></script>
+    <script src="Infragestic/2016.2/jquery-ui.min.js"></script>
+
+    <script src="Infragestic/2016.2/filesaver.js"></script>
+    <script src="Infragestic/2016.2/blob.js"></script>
+
+    <script src="Infragestic/2016.2/infragistics.core.js"></script>
+    <script src="Infragestic/2016.2/infragistics.lob.js"></script>
+    <script src="Infragestic/2016.2/infragistics.documents.core.js"></script>
+    <script src="Infragestic/2016.2/infragistics.excel.js"></script>
+    <script src="Infragestic/2016.2/infragistics.gridexcelexporter.js"></script>
+
+
+    
+
+    <script src="Scripts/dx-map-lib/globalize.min.js"></script>
+    <script src="Scripts/dx-map-lib/dx.all.js"></script>
+    <script src="Scripts/dx-map-lib/dx.chartjs.js"></script>
+    <script src="Scripts/dx-map-lib/usa.js"></script>
+    <script src="Scripts/dx-map-lib/modules.js"></script>
+
+    <script src="Scripts/jquery.showLoading.min.js"></script>
+    <script src="Scripts/modalpopup.js?ver=5345"></script>
+
+    <script src="Scripts/Modules/display-messages.js?ver=5345"></script>
+    <script src="Scripts/Modules/Module-V24.js?ver=5345"></script>
+
+    <script src="Scripts/Modules/ExportToExcel-V03.js?ver=5345"></script>
+
+    <script src="Scripts/masterpage.js?ver=5345"></script>
+
+    <script src="Scripts/logout-after-several-time.js?ver=5345"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#div-main-content").show();
+        });
+    </script>
+            
+    <script type="text/javascript" src="Scripts/Modules/branches-treeview-slap-V13.js?ver=5345"></script>
+    <script type="text/javascript" src="Scripts/Charts/HighCharts/highcharts.js?ver=5345"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script type="text/javascript" src="Scripts/sl-slap.js?ver=5345"></script>
+    <link rel="stylesheet" href="css/sl-slap.css?ver=5345">
+    <style type="text/css">
+        .clText,.cltext{
+            font-size:12px;
+        }
+         .clNumber{
+            font-size:12px;
+            padding-left:4px;
+        }
+         section.right-chart {
+            float: left !important;
+            width: 45% !important;
+            padding: 0%;
+            overflow: hidden;
+            margin-left: 5%;
+        }
+
+         section.left-chart {
+            float: left !important;
+            width: 45% !important;
+            padding: 0%;
+            overflow: hidden;
+            margin-right: 5%;
+        }
+         .right-chart .left-chart{
+             display:none;
+         }
+         .highcharts-credits{
+             display:none !important;
+         }
+
+        /*Custom style on Infra Grid*/
+         .ui-widget-header {
+            background: #b70100;
+        }
+        .ui-widget-header.ui-state-default {
+            background: #b70100;
+            padding-left: 5px;
+        }
+
+        .ui-iggrid-filterrow {
+            background-color: #ccccccba;
+        }
+        .ui-iggrid tr.ui-ig-altrecord {
+            background-color: #fae9e9;
+        }
+
+        .btnSearch {
+            background: #b70100;
+            height: 29px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        #div-grid_scroll::-webkit-scrollbar {
+            width: 0.75em;
+        }
+ 
+        #div-grid_scroll::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgb(129, 129, 129);
+        }
+ 
+        #div-grid_scroll::-webkit-scrollbar-thumb {
+          background-color: #b70100;
+          outline: 1px solid #111111;
+        }
+
+        .ui-widget .ui-iggrid-filterrow.ui-widget, .ui-iggrid td.ui-iggrid-filtercell, .ui-iggrid .ui-iggrid-filtercell .ui-igedit {
+            font-size: 12px;
+            height: 20px!important;
+        }
+
+        #div-branches input{
+           font-family: "Segoe UI",Arial,sans-serif;
+           font-size: 1em;
+        }
+
+
+        body::-webkit-scrollbar {
+            width: 15px !important;
+        }
+ 
+        body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgb(129, 129, 129) !important;
+        }
+ 
+        body::-webkit-scrollbar-thumb {
+          background-color: #b70100 !important;
+          outline: 2px solid #111111 !important;
+        }
+       
+        #div-months input{
+            padding-left:5px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .center {
+            text-align: center;
+        }
+
+        .loading-indicator {
+        height: 100%;
+        width: 100%;
+        background: url('../images/SupremeLending Logo.gif') !important;
+        background-repeat: no-repeat !important;
+        background-position: center 50% !important;
+        top:0px !important;
+        }
+
+        .ui-iggrid .ui-iggrid-footer, .ui-iggrid .ui-iggrid-toolbar {
+    background: #fae9e9;
+}
+
+li.ui-iggrid-pagecurrent.ui-state-active.ui-corner-all {
+    background: #b70100;
+}
+li.ui-iggrid-pagecurrent.ui-state-active.ui-corner-all a{
+    color: white;
+}
+
+.ui-iggrid .ui-iggrid-footer .ui-iggrid-paging-item.ui-state-default, .ui-iggrid .ui-iggrid-footer .ui-iggrid-paging-item .ui-iggrid-page.ui-state-default {
+    background: white;
+}
+
+    div#tblFundedLoans_container {
+        margin: 0 auto;
+    }
+    .ui-dialog .ui-dialog-titlebar.ui-state-focus {
+        background: #b70100;
+    }
+    #div-underwritingdetail table,#div-underwritingdetail th,#div-underwritingdetail td {
+        border: 1px solid black;
+    }
+    #div-underwritingdetail table {
+      border-collapse: collapse
+    }
+    div#div-underwritingdetail tr {
+        background: #ffffff;
+        font-size: 12px;
+
+    }
+    div#div-underwritingdetail tr td{
+        padding: 3px 10px;
+
+    }
+    table#div-grid_headers thead tr:nth-child(1) {
+    height: 20px !important;
+    }
+    table#div-grid_headers thead tr:nth-child(1) div {
+        font-size: 12px !important;
+    }
+
+    div#div-grid_mainFixedContainer thead tr:nth-child(1) {
+        height: 1.6em !important;
+    }
+    table tr td { 
+        height: 25px;
+    }
+
+
+    </style>
+<title>SL-SLAP</title></head>
+<body>
+    <form method="post" action="./slap.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="DZTkEftHXY/YvFVmh0G3uZ5FS3EoCb2Q5X+3KBSzlqwPpAJR0rn4DMP2uWTCQghcRbKC6iOrlf7xLBJ/zopOlHukHeFmE6k0+PzGHSDWD1MU6MDxCWOIC6FxAjTsNZzuGXfuc9HQcLQWdAUbj8AvMgkTz0P+PKeSOQHx6bGgNv3iBAkfE3Ig3JuU085+l8onZu6OQMjn/hKvFL9/bX1LcX4ddz1iYzJtRxjSMUMzmZlQkOhtE+VqWs1aK505DT2ecNJcgUA+ygns2HEMqyAoguQ407BwRdu2MljSxoNk/9WVnW1zVgkofzU83ZrbLJcrAzfWmA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZJhvoix5SPnub_jL7Kd0DnnKEsKl_eaOiC382cmouhw7Z-vryQ2&amp;t=636934705199995647" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvvF4g0vOw-zZBk3u1wLE4Gsm4lMNBcHHILA6vKF_GTdQTCVmzDusvcW9-uUfgHi6pBty7jEGMjccW-iSS_EomxBZo0rIUp82c7sBSU6OrfTbFqlbh0WoEmgViEgGIt6fZf6I0jg1&amp;t=ffffffffa580202a" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8ONTmrzZDL46pNc2daBgOpor2rhyaXauSqnhwFjD0_8la176Z2hqLRSXYBMfw7CXTIM9r84uo1utTi1xcNuPoioSGqX8h7xD_2EYvvXon63CQ7W_rQcVwB0khTlJ7Kz_YXsvhd9c1&amp;t=ffffffffa580202a" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="395BE4BF">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="my5f/+ISChsP2bIzG/qDhtDRV4r4CMtNZ4wZeyOaYBT8n7E3fSMivG2qBnbUlM1Aa6xDxezjEdG8w6/gTrIoSIEV0j9OPzncVeRnXdJU9C/wWn7fAFMRzahfiTbtpg3KFbJYhcYp5y6RS08BvYtaR3Qj+44YTT/M+suk4MvhJDKEMyQR4BlAWv2Y2GtKxPgczqez8G20dq5pGDbs134vUbRpgyuyjhdrJbGF9SUvfCDSbavhn+ehanoqZaCm7UAKympQ6E8nqC0bUhSHFsoPNuMPdF9X9DOR8M3Egy4SsKV6J/97LH8ZKd65pgHsN45p/jy2Ozus7khDA87ihahe8SwNWesu4MnT8gJehP+f70mBbt/dfXIcqAFtobgqK8BEUyRi+/nBm8e/C8vOHNaxPAvenYYL4dHct4pnnOiPVullOGKPs2UBZRrBeCsuwe733yZlrX8dIu5WpmfxcoFVbH8XRv1/x4MXt4vVmnjs7DFbnPA8ajAvVd+rlJUH3g9c7BIH79cM7ZbD633/ZoyWzWV2NQLayDWB/cRkxlGHpvyJ0GmtUVUOHFeD02q+3oxOHkOCRFofPTcD2HK/G8kqaQ79eQw=">
+</div>
+
+        <div id="timeout" style="display: none; width: 550px;" onmousemove="ResetTimers();">
+            <div style="font-weight: bold; font-size: 16px;">Warning: Your Session Is About To Expire</div>
+            <div style="font-size: 12px; margin-top: 10px;">
+                You will be automatically redirected to the Supreme Insight Page in the event this session expires.<br>
+                To avoid being signed out, please close out this window within the next 10 minute.
+            </div>
+        </div>
+
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <noscript><center><h3>Your browser does not support JavaScript! <br />Please enable JavaScript.</h3></center></noscript>
+        
+        <div id="div-main-content" style="min-height: 600px; width: 1890px; margin: 0px auto;">
+            
+            <div style="float: none; clear: both"></div>
+            <div id="backgroungImg" style="height: 50px; background-image: none; float: right; width: 100%; background-color: rgb(159, 0, 0);">
+                <img id="headerimg" src="/images/banner-slap.jpg" style="width: 80%; cursor: pointer; height: 100%;">
+                
+                <div style="float: right; color: #fff; margin-top: 10px; font-size: 12px; margin-right: 5px; width: 19%">
+                    <div style="width: 24px; height: 24px; float: left; margin-right: 20px;">
+                        
+                        
+                    </div>
+                    <div id="div-impersonate-user" style="float: right; margin-top: 4px;">
+                        
+                        <div id="ImpersonateUsers" style="float: right; width: 180px; height: 25px;" class="ui-igcombo-wrapper"><div class="ui-igcombo ui-widget ui-state-default ui-corner-all ui-unselectable" unselectable="on"><div class="ui-igcombo-button ui-state-default ui-unselectable ui-igcombo-button-ltr ui-corner-right" unselectable="on" title="Show drop-down"><div class="ui-igcombo-buttonicon ui-icon-triangle-1-s ui-icon"></div></div><div class="ui-igcombo-clear ui-unselectable" unselectable="on" title="Clear value" style="display: block;"><div class="ui-igcombo-clearicon ui-icon-circle-close ui-icon"></div></div><div class="ui-igcombo-fieldholder ui-igcombo-fieldholder-ltr ui-corner-left"><input type="text'" class="ui-igcombo-field ui-corner-all" autocomplete="off" placeholder="select..."></div><input type="hidden" class="ui-igcombo-hidden-field" value="vivek.prasad"></div></div>
+                        <input type="hidden" name="ctl00$hdnImpersonateShowHide" id="hdnImpersonateShowHide" value="vivek.prasad">
+                        <input type="submit" name="ctl00$btnImpersonate" value="Impersonate" id="btnImpersonate" class="btnSearch" style="display: none">
+                    </div>
+                    <div id="div-userlogin-name" style="display:none;margin-top:5px;">
+                        <span>Login : </span>
+                        <span id="lbluser" style="font-size: 14px;font-weight:bold;">Vivek Prasad</span>
+                    </div>
+                    <input type="hidden" name="ctl00$hdnImpersonate" id="hdnImpersonate">
+                    <input type="hidden" name="ctl00$hdnuser" id="hdnuser" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnadmin" id="hdnadmin" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnExport" id="hdnExport" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnIsUserRmOrCorp" id="hdnIsUserRmOrCorp" value="0">
+                    <input type="hidden" name="ctl00$hdnGroups" id="hdnGroups">
+                    <input type="hidden" name="ctl00$hdnReport" id="hdnReport" value="slap">
+                    <input type="hidden" name="ctl00$hdnBEA" id="hdnBEA" value="vivek.prasad">
+                    <input type="hidden" name="ctl00$hdnGrpSelectionChange" id="hdnGrpSelectionChange">
+                    <input type="hidden" name="ctl00$hdnUsersViewPermission" id="hdnUsersViewPermission">
+                    <input type="hidden" name="ctl00$hdnBlastUserLevel" id="hdnBlastUserLevel" value="1">
+                    <input type="hidden" name="ctl00$hdnDomaon" id="hdnDomaon">
+
+                    <input type="hidden" name="ctl00$hdnDisplayDashboards" id="hdnDisplayDashboards">
+                    <input type="hidden" name="ctl00$hdnPresentation" id="hdnPresentation">
+                    <input type="hidden" name="ctl00$hdnCurrentReport" id="hdnCurrentReport" value="sl-slap">
+                </div>
+            </div>
+            <div style="float: none; clear: both"></div>
+            <div style="clear: both; float: none;"></div>
+
+            <span id="lblMsg" style="color:Red;">You have no rights to view SLAP Dashboard.</span>
+
+            
+        </div>
+         <input type="hidden" name="ctl00$hdnSearchPermission" id="hdnSearchPermission">
+        <input type="hidden" name="ctl00$hdnStDatePermission" id="hdnStDatePermission">
+        <input type="hidden" name="ctl00$hdnEndDatePermission" id="hdnEndDatePermission">
+        <input type="hidden" name="ctl00$hdnuserPermission" id="hdnuserPermission">
+        <input type="hidden" name="ctl00$hdnExportIsType" id="hdnExportIsType">
+        <input type="hidden" name="ctl00$hdnIsBoss" id="hdnIsBoss">
+		<input type="hidden" name="ctl00$hdnexcelname" id="hdnexcelname">
+    </form>
+
+
+<div id="__ig_wm__" class="ui-igtrialwatermark" style="position: fixed; bottom: 0px; right: 0px; z-index: 1000;"></div><div class="dx-gesture-cover" style="pointer-events: none;"></div><div class="ui-igcombo-dropdown ui-widget ui-widget-content ui-corner-all ui-igcombo-no-border" style="height: 0px; top: -99999px; left: -99999px; overflow: hidden;"><div class="ui-igcombo-list" style="max-height: 360px;"><ul class="ui-igcombo-listitemholder"><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="addy.jolly" unselectable="on">Addy Jolly</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="alfredo.madrid" unselectable="on">Alfredo Madrid</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="amanda.biggs" unselectable="on">Amanda Biggs</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="andrew.stein" unselectable="on">Andrew Stein</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="andy.insua" unselectable="on">Andy Insua</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="andy.thompson" unselectable="on">Andy Thompson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="anna.beltran" unselectable="on">Anna Beltran</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="ariff.khimani" unselectable="on">Ariff Khimani</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="asim.punjwani" unselectable="on">Asim Punjwani</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="becky.majerczyk" unselectable="on">Becky Majerczyk</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="blair.katz" unselectable="on">Blair Katz</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="bn.smith" unselectable="on">Bobby Smith</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="bob.comstock" unselectable="on">Bob Comstock</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brad.roles" unselectable="on">Brad Roles</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brandon.polito" unselectable="on">Brandon Polito</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brendan.tabor" unselectable="on">Brendan Tabor</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brian.bailey" unselectable="on">Brian Bailey</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brian.fiore" unselectable="on">Brian Fiore</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brian.humphrey" unselectable="on">Brian Humphrey</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brian.jahanbin" unselectable="on">Brian Jahanbin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brian.phillips2" unselectable="on">Brian Phillips</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="brooke.cisneros" unselectable="on">Brooke Cisneros</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="caleb.ward" unselectable="on">Caleb Ward</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="camilo.gutierrez" unselectable="on">Camilo Gutierrez</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="carlos.rivera" unselectable="on">Carlos Rivera</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="carolyn.hensley" unselectable="on">Carolyn Hensley</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="cathy.anderson" unselectable="on">Cathy Anderson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="chandramohan.singh" unselectable="on">Chandramohan Singh</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="chris.duffy" unselectable="on">Chris Duffy</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="chris.gilmour" unselectable="on">Chris Gilmour</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="chris.king" unselectable="on">Chris  King</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="chris.lees" unselectable="on">Chris Lees</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="chris.murray" unselectable="on">Chris  Murray</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="chuck.keith" unselectable="on">Chuck Keith</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="chuck.roach" unselectable="on">Chuck Roach</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="clinton.alcorn" unselectable="on">Clinton Alcorn</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="cody.castle" unselectable="on">Cody Castle</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="cory.martilla" unselectable="on">Cory Martilla</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="dale.petrillo" unselectable="on">Dale Petrillo</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="dana.malia" unselectable="on">Dana Malia</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="danielle.pollack" unselectable="on">Danielle Pollack</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="darren.gussick" unselectable="on">Darren Gussick</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="david.redmond" unselectable="on">David Redmond</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="david.ross" unselectable="on">David Ross</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="dean.schmidt" unselectable="on">Dean Schmidt</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="denise.castillo" unselectable="on">Denise Castillo</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="denise.tomasini" unselectable="on">Denise Tomasini</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="derek.fasi" unselectable="on">Derek Fasi</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="disan.loera" unselectable="on">Disan Loera</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="don.mclelland" unselectable="on">Don McLelland</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="drew.davis" unselectable="on">Drew Davis</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="drew.sopha" unselectable="on">Drew Sopha</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="dylan.gouthro" unselectable="on">Dylan Gouthro</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="eric.phifer" unselectable="on">Eric Phifer</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="eric.union" unselectable="on">Eric Union</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="ethan.hormann" unselectable="on">Ethan Hormann</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="frank.brookshire" unselectable="on">Frank Brookshire</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="franky.bonilla" unselectable="on">Franky Bonilla</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="freeman.sawyer" unselectable="on">Freeman Sawyer</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="garrett.stetzer" unselectable="on">Garrett Stetzer</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="gary.meador" unselectable="on">Gary Meador</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="gopalrao.yadawadkar" unselectable="on">Gopalrao Yadawadkar</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="greg.groff" unselectable="on">Greg Groff</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="greg.necastro" unselectable="on">Greg Necastro</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="gregory.laywell" unselectable="on">Gregory Laywell</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="gus.triggas" unselectable="on">Gus Triggas</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="harish.naidu" unselectable="on">Harish Naidu</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jackie.duhon" unselectable="on">Jackie Duhon</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jackie.duhon1" unselectable="on">Jackie Duhon1</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="janet.jackson" unselectable="on">Janet Jackson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jason.lewis" unselectable="on">Jason.Lewis</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jason.ozment" unselectable="on">Jason Ozment</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jason.parris" unselectable="on">Jason Parris</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jason.pitarra" unselectable="on">Jason Pitarra</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jason.rasmusson" unselectable="on">Jason Rasmusson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jason.young" unselectable="on">Jason Young</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jeff.stipp" unselectable="on">Jeff Stipp</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jennifer.lawrie" unselectable="on">Jennifer Lawrie</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jessica.gonzales" unselectable="on">Jessica Gonzales</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="joe.boggs" unselectable="on">Joe Boggs</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="john.mcclellan" unselectable="on">John McClellan</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jorge.madrid" unselectable="on">Jorge Madrid</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="jr.teto" unselectable="on">JR Teto</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="justin.lees" unselectable="on">Justin Lees</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="kane.silverberg" unselectable="on">Kane Silverberg</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="kathryn.crowder" unselectable="on">Kathryn Crowder</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="kathy.rippel" unselectable="on">Kathy Rippel</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="kelly.howard" unselectable="on">Kelly Howard</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="ketul.shah" unselectable="on">Ketul Shah</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="kevin.jornlin" unselectable="on">Kevin Jornlin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="kevin.ranck" unselectable="on">Kevin Ranck</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="kevin.reid" unselectable="on">Kevin Reid</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="kristy.lohse" unselectable="on">Kristy Lohse</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="laila.razaali" unselectable="on">Laila Razaali</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="larry.brand" unselectable="on">Larry Brand</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="leeann.ly" unselectable="on">LeeAnn Ly</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="lina.armstrong" unselectable="on">Lina Armstrong</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="lisa.flood" unselectable="on">Lisa Flood</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="liz.liebig" unselectable="on">Liz Liebig</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="luke.welling" unselectable="on">Luke Welling</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="manisha.sarangi" unselectable="on">Manisha Sarangi</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="marc.portugal" unselectable="on">Marc Portugal</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="marc.starr" unselectable="on">Marc Starr</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="mario.vargas" unselectable="on">Mario Vargas</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="mark.schanze" unselectable="on">Mark D Schanze</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="martin.bruno" unselectable="on">Martin Bruno</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="massi.ashrafi" unselectable="on">Massi Ashrafi</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="matt.maltese" unselectable="on">Matt Maltese</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="matt.walker" unselectable="on">Matt Walker</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="matthew.mcguire" unselectable="on">Matthew McGuire</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="meggan.mcdonald" unselectable="on">Meggan McDonald</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="melanie.laywell" unselectable="on">Melanie Laywell</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="michael.haigh" unselectable="on">Michael Haigh</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="michael.salondaka" unselectable="on">Michael Salondaka</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="michael.sohl" unselectable="on">Michael Sohl</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="michael.swisher" unselectable="on">Michael Swisher</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="mike.coffey" unselectable="on">Mike Coffey</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="mike.drew" unselectable="on">Mike Drew</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="mike.fake" unselectable="on">Mike Fake</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="mike.larsen" unselectable="on">Mike Larsen</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="mike.pierson" unselectable="on">Mike Pierson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="mills.landon" unselectable="on">Mills Landon</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="minh.truong" unselectable="on">Minh Truong</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="molly.vanlawick" unselectable="on">Molly VanLawick</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="nancy.davis" unselectable="on">Nancy Davis</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="nayab.tahir" unselectable="on">Nayab Tahir</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="nick.patton" unselectable="on">Nick Patton</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="noor.punjwani" unselectable="on">Noor Punjwani</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="noor.surani" unselectable="on">Noor Surani</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="norb.theisen" unselectable="on">Norb Theisen</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="owais.ali" unselectable="on">Owais Ali</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="patrick.flood" unselectable="on">Patrick Flood</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="patrick.iglinsky" unselectable="on">Patrick Iglinsky</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="patrick.rooney" unselectable="on">Patrick Rooney</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="peddathota.khathun" unselectable="on">saleha khathun</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="pete.sung" unselectable="on">Pete Sung</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="phil.blankstein" unselectable="on">Phil Blankstein</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="r.lebourveau" unselectable="on">Richard A Lebourveau</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="r.saenz" unselectable="on">R Saenz</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="ramakrishnan.s" unselectable="on">Ramakrishnan S</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rammil.quizon" unselectable="on">Rammil Quizon</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rene.sanchez" unselectable="on">Rene Sanchez</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rhonda.ritch" unselectable="on">Rhonda Ritch</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rich.krupnik" unselectable="on">Rich Krupnik</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rick.hogle" unselectable="on">Rick Hogle</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rick.kesseler" unselectable="on">Rick Kesseler</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rick.martin" unselectable="on">Rick Martin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="ricky.miles" unselectable="on">Ricky Miles</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rock.martin" unselectable="on">Rock Martin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rodney.anderson" unselectable="on">Rodney Anderson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="rodney.malone" unselectable="on">Rodney Malone</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="roshni.shetty" unselectable="on">Roshni Shetty</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="scott.brooks" unselectable="on">Scott Brooks</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="scott.demich" unselectable="on">Scott Demich</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="scott.eaton" unselectable="on">Scott Eaton</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="scott.everett" unselectable="on">Scott Everett</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="shane.hensley" unselectable="on">Shane Hensley</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="sheri.martin" unselectable="on">Sheri Martin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="sireesha.vasireddy" unselectable="on">Sireesha Vasireddy</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="sreenath.pb" unselectable="on">Sreenath PB</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="stacey.geringer" unselectable="on">Stacey Geringer</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="steve.cantrell" unselectable="on">Steve Cantrell</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="steve.shuart" unselectable="on">Steve Shuart</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="stuart.drew" unselectable="on">Stuart Drew</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="susan.pomilia" unselectable="on">Susan Pomilia</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="svcqafccautomationus" unselectable="on">svcQaFCCAutomationUser</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="syed.islam" unselectable="on">Syed Islam</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="t.mcintosh" unselectable="on">T McIntosh</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="tevis.durbin" unselectable="on">Tevis Durbin</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="thomas.crowder" unselectable="on">Thomas Crowder</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="tiffany.berryman" unselectable="on">Tiffany Berryman</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="tim.nelson" unselectable="on">Tim Nelson</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="tom.blattau" unselectable="on">Tom Blattau</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="tony.schmeck" unselectable="on">Tony Schmeck</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="tony.tylman" unselectable="on">Tony Tylman</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="tracie.schmidt" unselectable="on">Tracie Schmidt</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable ui-state-active" data-value="vivek.prasad" unselectable="on">Vivek Prasad</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="wayne.rohrbaugh" unselectable="on">Wayne Rohrbaugh</li><li class="ui-igcombo-listitem ui-state-default ui-unselectable" data-value="zuhaib.zaffar" unselectable="on">Zuhaib Zaffar</li></ul></div></div></body></html>

@@ -1,0 +1,880 @@
+
+C:\Users\Vivek.Prasad\Documents\FccAutomation>echo off 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.test:FccAutomation:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.systemPath' for com.test:fireKW:jar should not point at files within the project directory, ${basedir}/ext/fireKW-1.0-SNAPSHOT.jar will be unresolvable by dependent projects @ line 93, column 16
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------------------< com.test:FccAutomation >-----------------------
+[INFO] Building TPO_Origination_Fire 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ FccAutomation ---
+[INFO] Deleting C:\Users\Vivek.Prasad\Documents\FccAutomation\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ FccAutomation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Vivek.Prasad\Documents\FccAutomation\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ FccAutomation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ FccAutomation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ FccAutomation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to C:\Users\Vivek.Prasad\Documents\FccAutomation\target\test-classes
+[WARNING] /C:/Users/Vivek.Prasad/Documents/FccAutomation/src/test/java/com/fcc/test/ChromeSetting.java: C:\Users\Vivek.Prasad\Documents\FccAutomation\src\test\java\com\fcc\test\ChromeSetting.java uses or overrides a deprecated API.
+[WARNING] /C:/Users/Vivek.Prasad/Documents/FccAutomation/src/test/java/com/fcc/test/ChromeSetting.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /C:/Users/Vivek.Prasad/Documents/FccAutomation/src/test/java/com/fcc/test/SoftAssert.java: Some input files use unchecked or unsafe operations.
+[WARNING] /C:/Users/Vivek.Prasad/Documents/FccAutomation/src/test/java/com/fcc/test/SoftAssert.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.3:test (default-test) @ FccAutomation ---
+[INFO] Surefire report directory: C:\Users\Vivek.Prasad\Documents\FccAutomation\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+log4j:WARN No appenders could be found for logger (com.tavant.kwutils.KWTestExecuter).
+log4j:WARN Please initialize the log4j system properly.
+Version - 3.2.1.1_HG
+****** STARTING TEST TS_7:Blast-Verification of Year Over Year Variance With TestData :TD_1:For branch Alcorn Region- Daily  *****
+Oct 17, 2019 9:11:38 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Oct 17, 2019 9:11:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Console stmt :BLAST Dashboard Execution started
+Module SL-BLASTClicked
+Console stmt :Navigate to BLAST Dashboard
+Control trying to Switch to Current window
+parent:CDwindow-F512F9B1D1834C8805057CF7B190D947
+*******************Windows : 2
+SL-BLAST
+Control Switched to Current window
+End of Select Regions Mehtod
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Waiting due to Home Symbol...
+Wait Page is loading...
+Home Symbol disappeared
+Home Symbol disappeared
+Home Symbol disappeared
+Discount Income
+Other HUD Fees, Net
+Processing Income
+LO Margin
+BM Margin
+Total Revenue
+LO Payroll Accrual
+Total Production Compensation
+Total Gross Margin
+Early Payoffs
+Appraisal Fee Expense
+Credit Report Expense
+U/W - Other
+Total Direct Production Costs
+Total Gross Margin Before Personnel Costs
+Total Gross Profit Before S, G & A
+Bank Charges
+Office Supplies
+Marketing Expense
+Leads
+Rent Expense
+Telephone & VOIP
+Total Selling, General & Administrative (S, G & A)
+Total Operating Income (Loss) Before BM Payroll
+Total Net Income (Loss)
+Loan Volume Units
+Loan Volume Amount
+Avg Loan Size
+Total Net Income (Loss)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+Number of Holiday Present between 10/16/2019 and 10/16/2019=0
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+Number of Holiday Present between 10/15/2019 and 10/15/2019=0
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=ATI_SL_ODS
+Database connection is successful
+Total Revenue
+Total Production Compensation
+Total Gross Margin
+Total Direct Production Costs
+Total Gross Margin Before Personnel Costs
+Total Personnel Costs
+Total Gross Profit Before S, G & A
+Total Selling, General & Administrative (S, G & A)
+Total Operating Income (Loss) Before BM Payroll
+Total BM Payroll-Paid
+Total Net Income (Loss)
+Total Net Income (Loss)
+Avg Loan Size
+Cumulative Balance
+***************************************
+Hedging Gains (Losses)-Pipeline - 42555 
+Travel - Car Rental - 65300 
+LO Payroll Accrual - 60106 
+Legal Expense - 61450 
+Escrow Waiver Fee Collected - 41220 
+General Insurance-CAPTIVE INSURANCE - 62365 
+Self Funded Transfer Dep - 62306 
+Travel - Lodging - 65200 
+Service Release Premium - 42400 
+Professional Services - 61500 
+LO Payroll Accrual Reversal - 60107 
+RM Payroll Accrual Reversal - 60164 
+Utilities - 62200 
+Recruiting - Presidents Club - 70300 
+BM Operating Entity - Personal Production - 60115 
+Contract Labor - 60500 
+Shared Services - 60400 
+Dues And Subscriptions - 61900 
+Accounting - 61400 
+Brokered Loan Fee Income - 41860 
+Depreciation Expense - 63100 
+Life Insurance - 62310 
+RM Payroll Accrual Reversal - 60164 
+Operations Payroll - Legal - 60135 
+Credit Report Expense - 55600 
+Computer Hardware - 66200 
+Travel - Tolls And Parking - 65400 
+Rental Income- Golf Village NH - 49200 
+Medical Insurance, Net - 62305,62304
+Day 1 - Expected Secondary Income - 42105 
+Processing Fees - 55275 
+Telephone - Cellular - 62270 
+Bonus Bank Adjustment - 42112 
+Branch Equipment Expense - 62105 
+BM Payroll Accrual Reversal - 60162 
+LO Comp - BPS - 41308 
+BM Payroll Accrual - 60161 
+BM-Regional Entity Payroll-BPS - 60127 
+Reversal - Receivable From Investor - 42106 
+Operations Payroll - Quality Contrl - 60145 
+Equipment Rental - 62100 
+Printing - 70400 
+Computer Supplies - 66100 
+U/W -Rapid Reporting - 55281 
+Operations Bonus Accrual - 60124 
+Consulting Fees Corp - 52400 
+Application Fees - 41210 
+Investor Interest - 55135 
+Operations Payroll - Licensing - 60140 
+Payroll Taxes - 64100 
+Flood Certification Cost - 55325 
+Telephone - 62250 
+Accounting And Website Fee Income - 48105 
+Branch Insurance Premiums - 62316 
+Recruiting Expense - 61505 
+Pair Off Corp - 55000 
+2ndy Adjust - Investor Followup - 42107 
+Bank Charges - 61700 
+Errors And Ommissions - 62355 
+Corp Margin - Branch Concessions - 42109 
+BM Operating Entity - Salary - 60112 
+Broker Secondary Fees - 52050 
+Tax Advice - 64500 
+Sales Manager Payroll - 60117 
+Seminar And Training - 67100 
+Rent Expense - 61000 
+Office Supplies - 61300 
+Loan Officer Payroll - 60105 
+Telephone - Long Distance - 62260 
+Self Funded Claims Expense - 62335 
+Entertainment - 65650 
+Origination Income - 41100 
+Contributions And Promotions - 68100 
+Management Fee Income - 41845 
+LO Minimum Wage Expense - 60108 
+Encompass Banker - 55290 
+Donations - 69810 
+Total Reserves - 91000 
+Travel - Other - 65500 
+Property And Liability Insurance - 62350 
+Appraisal Fee Expense - 55550 
+Misc Production Income - 41880 
+Brokered Loan Quarter Fee Income - 41865 
+Loans Funded - Volume $$ - 102 
+Telephone - Long Distance - 62260 
+Interest Income - Borrower Paid - 43300 
+Telephone - Local - 62251 
+Office Expense - 61200 
+Loans Funded - Volume - Units - 101 
+Self Funded Admin Expense - 62315 
+Franchise Tax & Business Tax - 64300 
+U/W - TALX - 55282 
+Premium/Discount From Investor - 42100 
+Self Funded Payroll Deductions - 62336 
+Hedge Losses - 52105 
+Recruiting - Golf Tournament - 70200 
+Cost To Sell To FNMA - 42410 
+TXCO- Hud -1 Fees - 41206 
+Branch Mgr Override - 60116 
+Credit From Employee Payroll Deduct - 62304 
+Travel - 65100 
+Loan Prospector - 55270 
+Postage - 61600 
+Operations Payroll-Servicing - 60125 
+Telephone & VOIP - 62210 
+Branch Recruiting Expense - 61215 
+Escrow Advances Held - 91115 
+LLPA ADJUSTMENTS - 42110 
+NSF Fees - 43475 
+Marketing Expense - 70100 
+Payroll Advances - 60113 
+Licensing & Permits - 61100 
+Document Preparation Expense - 52250 
+Loan Loss Reserve - 42111 
+Lender Credt -FHA Proj Inc Or Reloc - 41207 
+Collection Expenses - 55750 
+Real Estate Tax - 64400 
+Write-Off - 2'Dary Gain - Aged Loan - 42210 
+Meals - 65600 
+Brokered Loan Income - 41870 
+Dental Insurance - 62307 
+Repairs & Maintenance - 62150 
+Leads - 70105 
+Hedging Gains (Losses) - 42550 
+Other HUD Fees, Net - 41205 
+U/W -DU/DO - 55284 
+Interest Expense-Construction Loans - 55160 
+Servicing Fee Earned - Collected - 49300 
+Dept. Incurred Loan Variances-UW - 42221 
+Escrow Holdback Admin Fee - 41850 
+Document Destruction & Storage - 61205 
+Legal Settlements - 61455 
+BM-Regional Entity Payroll-Salary - 60126 
+BM Margin - 41306 
+Stationary Expense - 70405 
+Recruiting -Sales Rally - 70110 
+Early Payoffs - 52210 
+U/W -Fraud Guard - 55287 
+Loan Officer Assistant Payroll - 60118 
+Corporate Subsidy - 60114 
+RM Margin - 41307 
+Technical Support Expense - 66300 
+Carry Over - 91110 
+Courier/Overnight - 61605 
+RM Payroll Accrual - 60163 
+Quality Control - 55500 
+Dept. Incurred Loan Variances-CL - 42220 
+U/W - Other - 55280 
+Recording Fees - 55250 
+Processing Fees - 41370 
+Misc Income - 48800 
+Losses From Branches - 80150 
+File Storage - Off Site - 61210 
+LO Margin - 41305,41308
+Processing Income - 41830 
+Mark To Market - Month End - 42200 
+Rental Income-Branches - 49100 
+Taxes-Other - 64310 
+Operations Payroll Accrual - 60165 
+Discount Income - 41200  
+Corporate Parties - 65700 
+Late Payment Fees - 43450 
+Personal Property Tax - 64305 
+Operations Payroll Accrual Reversal - 60166
+Medical Insurance, Net - 62305,62304
+Loan Volume Units - 101
+Loan Volume Amount - 102
+***************************************
+164
+Cost To Sell To FNMA - 42410
+Encompass Banker - 55290
+Recruiting - Presidents Club - 70300
+BM Margin - 41306
+Operations Payroll Accrual - 60165
+Legal Settlements - 61455
+Shared Services - 60400
+Premium/Discount From Investor - 42100
+Postage - 61600
+Tax Advice - 64500
+Recruiting Expense - 61505
+Operations Payroll-Servicing - 60125
+Legal Expense - 61450
+Processing Fees - 41370
+Processing Income - 41830
+Bank Charges - 61700
+Credit From Employee Payroll Deduct - 62304
+LO Payroll Accrual Reversal - 60107
+BM Payroll Accrual - 60161
+Recruiting - Golf Tournament - 70200
+Operations Bonus Accrual - 60124
+Self Funded Transfer Dep - 62306
+Hedging Gains (Losses) - 42550
+Life Insurance - 62310
+Rent Expense - 61000
+File Storage - Off Site - 61210
+Loan Loss Reserve - 42111
+Total Reserves - 91000
+Credit Report Expense - 55600
+Lender Credt -FHA Proj Inc Or Reloc - 41207
+Losses From Branches - 80150
+LO Payroll Accrual - 60106
+LO Comp - BPS - 41308
+Escrow Holdback Admin Fee - 41850
+Corporate Subsidy - 60114
+Hedge Losses - 52105
+Operations Payroll Accrual Reversal - 60166
+U/W -Fraud Guard - 55287
+Investor Interest - 55135
+Loans Funded - Volume $$ - 102
+Rental Income-Branches - 49100
+Leads - 70105
+Operations Payroll - Licensing - 60140
+Franchise Tax & Business Tax - 64300
+Donations - 69810
+Interest Income - Borrower Paid - 43300
+U/W - Other - 55280
+Printing - 70400
+Misc Production Income - 41880
+Equipment Rental - 62100
+Service Release Premium - 42400
+LO Minimum Wage Expense - 60108
+Other HUD Fees, Net - 41205
+Document Destruction & Storage - 61205
+TXCO- Hud -1 Fees - 41206
+U/W -DU/DO - 55284
+Loan Volume Amount - 102
+Dept. Incurred Loan Variances-CL - 42220
+Interest Expense-Construction Loans - 55160
+Contributions And Promotions - 68100
+Branch Mgr Override - 60116
+Hedging Gains (Losses)-Pipeline - 42555
+Seminar And Training - 67100
+Brokered Loan Fee Income - 41860
+Depreciation Expense - 63100
+Office Expense - 61200
+Travel - Car Rental - 65300
+Travel - Other - 65500
+RM Payroll Accrual Reversal - 60164
+Courier/Overnight - 61605
+Telephone - Long Distance - 62260
+U/W - TALX - 55282
+Self Funded Payroll Deductions - 62336
+Consulting Fees Corp - 52400
+NSF Fees - 43475
+BM Payroll Accrual Reversal - 60162
+RM Payroll Accrual - 60163
+Contract Labor - 60500
+Operations Payroll - Quality Contrl - 60145
+Management Fee Income - 41845
+Payroll Advances - 60113
+Escrow Advances Held - 91115
+Personal Property Tax - 64305
+2ndy Adjust - Investor Followup - 42107
+Professional Services - 61500
+Branch Equipment Expense - 62105
+Brokered Loan Quarter Fee Income - 41865
+Document Preparation Expense - 52250
+Branch Recruiting Expense - 61215
+Repairs & Maintenance - 62150
+Licensing & Permits - 61100
+Discount Income - 41200
+Carry Over - 91110
+Utilities - 62200
+Escrow Waiver Fee Collected - 41220
+BM Operating Entity - Personal Production - 60115
+Loans Funded - Volume - Units - 101
+Telephone & VOIP - 62210
+Broker Secondary Fees - 52050
+Dues And Subscriptions - 61900
+Computer Hardware - 66200
+Travel - Tolls And Parking - 65400
+Reversal - Receivable From Investor - 42106
+Stationary Expense - 70405
+Loan Prospector - 55270
+Meals - 65600
+Technical Support Expense - 66300
+Taxes-Other - 64310
+Payroll Taxes - 64100
+Entertainment - 65650
+Day 1 - Expected Secondary Income - 42105
+LLPA ADJUSTMENTS - 42110
+Bonus Bank Adjustment - 42112
+Misc Income - 48800
+Recruiting -Sales Rally - 70110
+Rental Income- Golf Village NH - 49200
+Origination Income - 41100
+Servicing Fee Earned - Collected - 49300
+Brokered Loan Income - 41870
+Loan Officer Assistant Payroll - 60118
+Mark To Market - Month End - 42200
+Early Payoffs - 52210
+Loan Officer Payroll - 60105
+RM Margin - 41307
+Errors And Ommissions - 62355
+Travel - 65100
+Quality Control - 55500
+General Insurance-CAPTIVE INSURANCE - 62365
+Processing Fees - 55275
+BM-Regional Entity Payroll-Salary - 60126
+Appraisal Fee Expense - 55550
+Marketing Expense - 70100
+BM-Regional Entity Payroll-BPS - 60127
+Dental Insurance - 62307
+LO Margin - 41305,41308
+Property And Liability Insurance - 62350
+Collection Expenses - 55750
+Computer Supplies - 66100
+Corp Margin - Branch Concessions - 42109
+Travel - Lodging - 65200
+Self Funded Claims Expense - 62335
+Flood Certification Cost - 55325
+Dept. Incurred Loan Variances-UW - 42221
+Telephone - Local - 62251
+Branch Insurance Premiums - 62316
+Loan Volume Units - 101
+Application Fees - 41210
+Accounting - 61400
+Recording Fees - 55250
+Late Payment Fees - 43450
+U/W -Rapid Reporting - 55281
+Telephone - Cellular - 62270
+Real Estate Tax - 64400
+Office Supplies - 61300
+Accounting And Website Fee Income - 48105
+Pair Off Corp - 55000
+Operations Payroll - Legal - 60135
+Corporate Parties - 65700
+Sales Manager Payroll - 60117
+Telephone - 62250
+Write-Off - 2'Dary Gain - Aged Loan - 42210
+Medical Insurance, Net - 62305,62304
+BM Operating Entity - Salary - 60112
+Self Funded Admin Expense - 62315
+I am Done with Creation of GlKeyPairMap
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41200') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41205') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41830') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41305','41308') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41306') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('60106') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('52210') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('55550') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('55600') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('55280') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+-Total Personnel Costs value is 0
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('61700') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('61300') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('70100') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('70105') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('61000') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('62210') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+-Total BM Payroll-Paid value is 0
+-Losses From Branches value is 0
+Corporate Subsidy value is 0
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('101') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('102') and JournalPostDate between '10/01/2019' and '10/15/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+----------------inside verifyLinkedHashMap--------------
+variencecutoff  :10
+key   :   Discount Income     varience   :0
+variencecutoff  :10
+key   :   Other HUD Fees, Net     varience   :0
+variencecutoff  :10
+key   :   Processing Income     varience   :0
+variencecutoff  :10
+key   :   LO Margin     varience   :0
+variencecutoff  :10
+key   :   BM Margin     varience   :0
+variencecutoff  :10
+key   :   Total Revenue     varience   :0
+variencecutoff  :10
+key   :   LO Payroll Accrual     varience   :0
+variencecutoff  :10
+key   :   Total Production Compensation     varience   :0
+variencecutoff  :10
+key   :   Total Gross Margin     varience   :0
+variencecutoff  :10
+key   :   Early Payoffs     varience   :0
+variencecutoff  :10
+key   :   Appraisal Fee Expense     varience   :0
+variencecutoff  :10
+key   :   Credit Report Expense     varience   :-1
+variencecutoff  :10
+key   :   U/W - Other     varience   :0
+variencecutoff  :10
+key   :   Total Direct Production Costs     varience   :1
+variencecutoff  :10
+key   :   Total Gross Margin Before Personnel Costs     varience   :0
+variencecutoff  :10
+key   :   Total Gross Profit Before S, G & A     varience   :0
+variencecutoff  :10
+key   :   Bank Charges     varience   :0
+variencecutoff  :10
+key   :   Office Supplies     varience   :0
+variencecutoff  :10
+key   :   Marketing Expense     varience   :0
+variencecutoff  :10
+key   :   Leads     varience   :0
+variencecutoff  :10
+key   :   Rent Expense     varience   :0
+variencecutoff  :10
+key   :   Telephone & VOIP     varience   :0
+variencecutoff  :10
+key   :   Total Selling, General & Administrative (S, G & A)     varience   :-1
+variencecutoff  :10
+key   :   Total Operating Income (Loss) Before BM Payroll     varience   :1
+variencecutoff  :10
+key   :   Total Net Income (Loss)     varience   :1
+variencecutoff  :10
+key   :   Loan Volume Units     varience   :0
+variencecutoff  :10
+key   :   Loan Volume Amount     varience   :0
+variencecutoff  :10
+key   :   Avg Loan Size     varience   :1
+----------------end verifyLinkedHashMap--------------
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41200') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41205') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41830') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41305','41308') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('41306') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('60106') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('52210') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('55550') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('55600') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('55280') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+-Total Personnel Costs value is 0
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('61700') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('61300') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('70100') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('70105') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('61000') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('62210') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+-Total BM Payroll-Paid value is 0
+-Losses From Branches value is 0
+Corporate Subsidy value is 0
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('101') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+ConnectionID:3 ClientConnectionId: c099f6c1-22ff-4b1a-8459-81ad37a27a38
+select sum(Amount) from Temp_GeneralLedger with(nolock) where GLAccount in('102') and JournalPostDate between '10/01/2019' and '10/16/2019' and  GLBranch in('783','784','785','786','787','788','789') and (DebitGLAccount >= 30000 or DebitGLAccount < 10000 or creditglaccount >= 30000 OR creditglaccount < 10000)
+url>>jdbc:sqlserver://CPQAWSQL02;databaseName=SL_ACCT_DW
+----------------inside verifyLinkedHashMap--------------
+variencecutoff  :10
+key   :   Discount Income     varience   :0
+variencecutoff  :10
+key   :   Other HUD Fees, Net     varience   :0
+variencecutoff  :10
+key   :   Processing Income     varience   :0
+variencecutoff  :10
+key   :   LO Margin     varience   :0
+variencecutoff  :10
+key   :   BM Margin     varience   :0
+variencecutoff  :10
+key   :   Total Revenue     varience   :0
+variencecutoff  :10
+key   :   LO Payroll Accrual     varience   :0
+variencecutoff  :10
+key   :   Total Production Compensation     varience   :0
+variencecutoff  :10
+key   :   Total Gross Margin     varience   :0
+variencecutoff  :10
+key   :   Early Payoffs     varience   :0
+variencecutoff  :10
+key   :   Appraisal Fee Expense     varience   :0
+variencecutoff  :10
+key   :   Credit Report Expense     varience   :-1
+variencecutoff  :10
+key   :   U/W - Other     varience   :0
+variencecutoff  :10
+key   :   Total Direct Production Costs     varience   :1
+variencecutoff  :10
+key   :   Total Gross Margin Before Personnel Costs     varience   :0
+variencecutoff  :10
+key   :   Total Gross Profit Before S, G & A     varience   :0
+variencecutoff  :10
+key   :   Bank Charges     varience   :0
+variencecutoff  :10
+key   :   Office Supplies     varience   :0
+variencecutoff  :10
+key   :   Marketing Expense     varience   :0
+variencecutoff  :10
+key   :   Leads     varience   :0
+variencecutoff  :10
+key   :   Rent Expense     varience   :0
+variencecutoff  :10
+key   :   Telephone & VOIP     varience   :0
+variencecutoff  :10
+key   :   Total Selling, General & Administrative (S, G & A)     varience   :-1
+variencecutoff  :10
+key   :   Total Operating Income (Loss) Before BM Payroll     varience   :1
+variencecutoff  :10
+key   :   Total Net Income (Loss)     varience   :1
+variencecutoff  :10
+key   :   Loan Volume Units     varience   :0
+variencecutoff  :10
+key   :   Loan Volume Amount     varience   :0
+variencecutoff  :10
+key   :   Avg Loan Size     varience   :1
+----------------end verifyLinkedHashMap--------------
+Inside compareVariance Method
+Discount Income    :     85335
+Discount Income    :     85335
+Discount Income    :     0
+variencecutoff  :10
+key   :   Discount Income     varience   :0
+Other HUD Fees, Net    :     -67
+Other HUD Fees, Net    :     -67
+Other HUD Fees, Net    :     0
+variencecutoff  :10
+key   :   Other HUD Fees, Net     varience   :0
+Processing Income    :     5135
+Processing Income    :     5135
+Processing Income    :     0
+variencecutoff  :10
+key   :   Processing Income     varience   :0
+LO Margin    :     -21323
+LO Margin    :     -21323
+LO Margin    :     0
+variencecutoff  :10
+key   :   LO Margin     varience   :0
+BM Margin    :     43483
+BM Margin    :     43483
+BM Margin    :     0
+variencecutoff  :10
+key   :   BM Margin     varience   :0
+Total Revenue    :     112563
+Total Revenue    :     112563
+Total Revenue    :     0
+variencecutoff  :10
+key   :   Total Revenue     varience   :0
+LO Payroll Accrual    :     36186
+LO Payroll Accrual    :     36186
+LO Payroll Accrual    :     0
+variencecutoff  :10
+key   :   LO Payroll Accrual     varience   :0
+Total Production Compensation    :     36186
+Total Production Compensation    :     36186
+Total Production Compensation    :     0
+variencecutoff  :10
+key   :   Total Production Compensation     varience   :0
+Total Gross Margin    :     76377
+Total Gross Margin    :     76377
+Total Gross Margin    :     0
+variencecutoff  :10
+key   :   Total Gross Margin     varience   :0
+Early Payoffs    :     8905
+Early Payoffs    :     8905
+Early Payoffs    :     0
+variencecutoff  :10
+key   :   Early Payoffs     varience   :0
+Appraisal Fee Expense    :     220
+Appraisal Fee Expense    :     220
+Appraisal Fee Expense    :     0
+variencecutoff  :10
+key   :   Appraisal Fee Expense     varience   :0
+Credit Report Expense    :     -436
+Credit Report Expense    :     -436
+Credit Report Expense    :     0
+variencecutoff  :10
+key   :   Credit Report Expense     varience   :0
+U/W - Other    :     750
+U/W - Other    :     750
+U/W - Other    :     0
+variencecutoff  :10
+key   :   U/W - Other     varience   :0
+Total Direct Production Costs    :     535
+Total Direct Production Costs    :     535
+Total Direct Production Costs    :     0
+variencecutoff  :10
+key   :   Total Direct Production Costs     varience   :0
+Total Gross Margin Before Personnel Costs    :     66938
+Total Gross Margin Before Personnel Costs    :     66938
+Total Gross Margin Before Personnel Costs    :     0
+variencecutoff  :10
+key   :   Total Gross Margin Before Personnel Costs     varience   :0
+Total Gross Profit Before S, G & A    :     66938
+Total Gross Profit Before S, G & A    :     66938
+Total Gross Profit Before S, G & A    :     0
+variencecutoff  :10
+key   :   Total Gross Profit Before S, G & A     varience   :0
+Bank Charges    :     458
+Bank Charges    :     458
+Bank Charges    :     0
+variencecutoff  :10
+key   :   Bank Charges     varience   :0
+Office Supplies    :     339
+Office Supplies    :     339
+Office Supplies    :     0
+variencecutoff  :10
+key   :   Office Supplies     varience   :0
+Marketing Expense    :     1249
+Marketing Expense    :     1249
+Marketing Expense    :     0
+variencecutoff  :10
+key   :   Marketing Expense     varience   :0
+Leads    :     24288
+Leads    :     24288
+Leads    :     0
+variencecutoff  :10
+key   :   Leads     varience   :0
+Rent Expense    :     19605
+Rent Expense    :     19605
+Rent Expense    :     0
+variencecutoff  :10
+key   :   Rent Expense     varience   :0
+Telephone & VOIP    :     838
+Telephone & VOIP    :     838
+Telephone & VOIP    :     0
+variencecutoff  :10
+key   :   Telephone & VOIP     varience   :0
+Total Selling, General & Administrative (S, G & A)    :     46776
+Total Selling, General & Administrative (S, G & A)    :     46776
+Total Selling, General & Administrative (S, G & A)    :     0
+variencecutoff  :10
+key   :   Total Selling, General & Administrative (S, G & A)     varience   :0
+Total Operating Income (Loss) Before BM Payroll    :     20162
+Total Operating Income (Loss) Before BM Payroll    :     20162
+Total Operating Income (Loss) Before BM Payroll    :     0
+variencecutoff  :10
+key   :   Total Operating Income (Loss) Before BM Payroll     varience   :0
+Total Net Income (Loss)    :     20162
+Total Net Income (Loss)    :     20162
+Total Net Income (Loss)    :     0
+variencecutoff  :10
+key   :   Total Net Income (Loss)     varience   :0
+Loan Volume Units    :     13
+Loan Volume Units    :     13
+Loan Volume Units    :     0
+variencecutoff  :10
+key   :   Loan Volume Units     varience   :0
+Loan Volume Amount    :     4781191
+Loan Volume Amount    :     4781191
+Loan Volume Amount    :     0
+variencecutoff  :10
+key   :   Loan Volume Amount     varience   :0
+Avg Loan Size    :     367784
+Avg Loan Size    :     367784
+Avg Loan Size    :     0
+variencecutoff  :10
+key   :   Avg Loan Size     varience   :0
+End compareVariance Method
+***** ENDING TEST TS_7:Blast-Verification of Year Over Year Variance With TestData :TD_1:For branch Alcorn Region- Daily  *****
+====================================================================================
+Total ::: No Of Test cases :1::: PASS:1:::Fail:0:::Skipped:0
+====================================================================================
+PASSED: TS_7:Blast-Verification of Year Over Year Variance With TestData :TD_1:For branch Alcorn Region- Daily 
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 149.013 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:34 min
+[INFO] Finished at: 2019-10-17T09:14:05-05:00
+[INFO] ------------------------------------------------------------------------
